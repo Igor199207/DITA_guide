@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="create_map_in_oxygen">
+    <title>Создание карты в Oxygen XML Editor</title>
+    <shortdesc>Пошаговая инструкция по созданию DITA карты в Oxygen XML Editor 27.</shortdesc>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Откройте Oxygen XML Editor.</cmd>
+            </step>
+            <step>
+                <cmd>В меню выберите<b>File -> New</b>, или используйте горячие клавиши <b>CTRL + N</b>.</cmd>
+            </step>
+            <step>
+                <cmd>В открывшимся окне выберите <b>DITA -> Maps -> Map</b> и нажмите <b>Create</b>.</cmd>
+                <info>
+                <image href="images/map.png" alt="Раздел меню с выбором карты" placement="break"/>
+                </info>
+            </step>
+            <step>
+                <cmd>Укажите имя файла карты (например, <codeph>documentation.ditamap</codeph>)</cmd>
+            </step>
+            <step>
+                <cmd>Добавьте ссылки на топики с помощью элемента <codeph>&lt;topicref&gt;</codeph>.</cmd>
+                <info>Для этого можно использовать панель <b>DITA Maps Manager</b> или редактировать XML напрямую.</info>
+            </step>
+            <step>
+                <cmd>Сохраните изменения (<b>Ctrl+S</b>).</cmd>
+            </step>
+        </steps>
+        <result>Вы создали карту, в которой заданы ссылки на нужные топики, и теперь можете использовать её для публикации документации.</result>
+    </taskbody>
+</task>

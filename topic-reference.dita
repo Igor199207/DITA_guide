@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="topic-reference">
+    <title>Топик Reference в DITA</title>
+    <shortdesc>Структурированный контейнер для справочной информации: параметров, характеристик, свойств и технических данных.</shortdesc>
+    <conbody>
+        <section id="ref_definition">
+            <title>Что такое топик Reference?</title>
+            <p><b>Reference</b> (справочник) - тип DITA-топика, предназначенный для систматизации статической информации:</p>
+            <ul>
+                <li>Параметров API и конфигурации;</li>
+                <li>Техничесих характеристик оборудования;</li>
+                <li>Свойств объектов и их значений;</li>
+                <li>Справочных таблиц и данных.</li>
+            </ul>
+            <p>Отличается от других типов топиков строгой структурой и ориентацией на быстрый поиск информации.</p>
+        </section>
+        
+        <section id="ref_purpose">
+            <title>Назначение и применение</title>
+            <p>Топики Reference используются для решение следующих задач:</p>
+            <simpletable>
+                <sthead>
+                    <stentry>Задача</stentry>
+                    <stentry>Пример</stentry>
+                </sthead>
+                <strow>
+                    <stentry>Документирование</stentry>
+                    <stentry>Справочник методов и параметров REST API</stentry>
+                </strow>
+                <strow>
+                    <stentry>Технические спецификации</stentry>
+                    <stentry>Характеристики серверного оборудования</stentry>
+                </strow>
+                <strow>
+                    <stentry>Справочники настроек</stentry>
+                    <stentry>Параметры конфигурационного файла</stentry>
+                </strow>
+            </simpletable>
+            <p><b>Отличия от других топиков:</b></p>
+            <dl>
+                <dlentry>
+                    <dt><b>Concept</b></dt>
+                    <dd>Объясняет теорию и принципы работы</dd>
+                </dlentry>
+                <dlentry>
+                    <dt><b>Task</b></dt>
+                    <dd>Описывает последовательность действий</dd>
+                </dlentry>
+                <dlentry>
+                    <dt><b>Glossary</b></dt>
+                    <dd>Содержит определения терминов и их объяснения</dd>
+                </dlentry>
+            </dl>
+        </section>
+        
+        <section id="ref_structure">
+            <title>Структура reference-топика</title>
+            <p>Базовый каркас включает:</p>
+            <codeblock>
+                &lt;reference id="unique_id">
+                &lt;title>Заголовок справочника&lt;/title>
+                &lt;shortdesc>Краткое описание&lt;/shortdesc>
+                &lt;refbody>
+                &lt;!-- Основной контент -->
+                &lt;section>...&lt;/section>
+                &lt;table>...&lt;/table>
+                &lt;properties>...&lt;/properties>
+                &lt;/refbody>
+                &lt;/reference>
+            </codeblock>
+            <p><b>Ключевые элементы:</b></p>
+            <ul>
+                <li><b>refbody</b> - основной контейер для справочного контента;</li>
+                <li><b>properties</b> - специализированный элемент для описания атрибутов и их значений;</li>
+                <li><b>table</b> - для табличных данных (параметры, сравнение версий);</li>
+                <li><b>section</b> - группировка связанных данных по категориям.</li>
+            </ul>
+        </section>
+        
+        <section id="ref_best_practices">
+            <title>Принципы создания топиков Reference в DITA</title>
+            <ol>
+                <li><b>Единая структура</b> - сохраняйте одинаковую организацию данных во всех reference-топиках</li>
+                <li><b>Семантическая разметка</b> - используйте специализированные элементы:
+                    <codeblock>
+                        &lt;properties>
+                        &lt;property>
+                        &lt;proptype>Тип данных&lt;/proptype>
+                        &lt;propvalue>Значение по умолчанию&lt;/propvalue>
+                        &lt;propdesc>Описание параметра&lt;/propdesc>
+                        &lt;/property>
+                        &lt;/properties>
+                    </codeblock>
+                </li>
+                <li><b>Минимум пояснений</b> - информация должна быть лаконичной и фактологической</li>
+                <li><b>Переиспользуемость</b> - проектируйте топики для включения в разные контексты</li>
+            </ol>
+        </section>
+        <example id="ref_example">
+            <title>Пример использования</title>
+            <p>Справочник параметров конфигурации:</p>
+            <codeblock>
+                &lt;reference id="config_ref">
+                &lt;title>Настройки сервера&lt;/title>
+                &lt;refbody>
+                &lt;properties>
+                &lt;prophead>
+                &lt;proptype>Тип&lt;/proptype>
+                &lt;propvalue>Значение&lt;/propvalue>
+                &lt;propdesc>Описание&lt;/propdesc>
+                &lt;/prophead>
+                &lt;property>
+                &lt;proptype>Integer&lt;/proptype>
+                &lt;propvalue>8080&lt;/propvalue>
+                &lt;propdesc>Порт HTTP&lt;/propdesc>
+                &lt;/property>
+                &lt;property>
+                &lt;proptype>String&lt;/proptype>
+                &lt;propvalue>"/var/log"&lt;/propvalue>
+                &lt;propdesc>Директория логов&lt;/propdesc>
+                &lt;/property>
+                &lt;/properties>
+                &lt;/refbody>
+                &lt;/reference>
+            </codeblock>
+        </example>
+        
+        <section id="ref_integration">
+            <title>Интеграция в документацию</title>
+            <p>В DITA-карте:</p>
+            <codeblock>&lt;map>
+                &lt;topicref href="api-reference.dita" 
+                navtitle="Справочник API"
+                processing-role="resource-only"/>
+                &lt;/map></codeblock>
+            <p><b>Особенности:</b></p>
+            <ul>
+                <li>Атрибут <codeph>processing-role="resource-only"</codeph> исключает топик из линейной последовательности чтения</li>
+                <li>Ссылки из других топиков: <codeph>&lt;xref href="api-reference.dita"/></codeph></li>
+                <li>Группировка: объединяйте связанные справочники в разделы карты</li>
+            </ul>
+        </section>
+    </conbody>
+</concept>

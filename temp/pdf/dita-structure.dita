@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\DITA_guide\temp\pdf?><?workdir-uri file:/D:/DITA_guide/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="structure_topic_concept" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="concept:1;3:39" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="title:1;4:12">Базовая стурктура &lt;topic&gt;</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="shortdesc:1;5:16">Описание структуры &lt;topic&gt;</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="conbody:1;6:14">
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="p:1;7:12">Базовая структура любого &lt;topic&gt; состоит из следующих компонентов</p>
+        <codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="codeblock:1;8:20">
+            &lt;topic id="unique_id"&gt;
+                &lt;title&gt;Заголовок&lt;/title&gt;
+                &lt;shortdesc&gt;Краткое описание (аннотация).&lt;/shortdesc&gt;gt;
+                &lt;prolog&gt;...&lt;/prolog&gt; 
+                &lt;body&gt;
+                    
+                    &lt;/body&gt;
+                &lt;/topic&gt;
+        </codeblock>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="p:2;18:12">Разберем подробнее элементы структуры:</p>
+        <simpletable class="- topic/simpletable " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="simpletable:1;19:22">
+            <sthead class="- topic/sthead " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="sthead:1;20:21">
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:1;21:26" dita-ot:x="1" dita-ot:y="1">Элемент</stentry>
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:2;22:26" dita-ot:x="2" dita-ot:y="1">Описание</stentry>
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:3;23:26" dita-ot:x="3" dita-ot:y="1">Пример использования</stentry>
+            </sthead>
+            <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="strow:1;25:20">
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:4;26:26" dita-ot:x="1" dita-ot:y="2"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="codeph:1;26:34">&lt;title&gt;</codeph></stentry>
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:5;27:26" dita-ot:x="2" dita-ot:y="2">Заголовок топика или раздела.</stentry>
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:6;28:26" dita-ot:x="3" dita-ot:y="2"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="codeph:2;28:34">&lt;title&gt;Как использовать DITA&lt;/title&gt;</codeph></stentry>
+            </strow>
+            <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="strow:2;30:20">
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:7;31:26" dita-ot:x="1" dita-ot:y="3"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="codeph:3;31:34">&lt;shortdesc&gt;</codeph></stentry>
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:8;32:26" dita-ot:x="2" dita-ot:y="3">Краткое описание содержания топика.</stentry>
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:9;33:26" dita-ot:x="3" dita-ot:y="3"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="codeph:4;33:34">&lt;shortdesc&gt;Краткое введение в тему.&lt;/shortdesc&gt;</codeph></stentry>
+            </strow>
+            <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="strow:3;35:20">
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:10;36:26" dita-ot:x="1" dita-ot:y="4"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="codeph:5;36:34">&lt;body&gt;</codeph></stentry>
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:11;37:26" dita-ot:x="2" dita-ot:y="4">Основная часть топика (для concept и task).</stentry>
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:12;38:26" dita-ot:x="3" dita-ot:y="4"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="codeph:6;38:34">&lt;body&gt;...&lt;/body&gt;</codeph></stentry>
+            </strow>
+            <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="strow:4;40:20">
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:13;41:26" dita-ot:x="1" dita-ot:y="5"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="codeph:7;41:34">&lt;prolog&gt;</codeph></stentry>
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:14;42:26" dita-ot:x="2" dita-ot:y="5">Метаданные (автор, ревизия, ключевые слова и т.д.), часто заполняется автоматически.</stentry>
+                <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="stentry:15;43:26" dita-ot:x="3" dita-ot:y="5"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="codeph:8;43:34">&lt;prolog&gt;...&lt;/prolog&gt;</codeph></stentry>
+            </strow>
+        </simpletable>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="p:3;46:12">Дополнительно можно добавить любые дополнительные секции внутри тела документа &lt;body&gt;, такие как:</p>
+        <ul class="- topic/ul " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="ul:1;47:13">
+            <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="li:1;48:17">Параграфы &lt;p&gt; — Основной элемент для обычного текста.</li>
+            <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="li:2;49:17">Списки &lt;ol&gt;, &lt;ul&gt;, &lt;sl&gt; — Упорядоченные, нумерованные и нестандартные списки соответственно.</li>
+            <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="li:3;50:17">Таблицы &lt;table&gt;, &lt;simpletable&gt; — Для представления табличных данных.</li>
+            <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="li:4;51:17">Иллюстрации &lt;image&gt; — Графики, диаграммы и фотографии.</li>
+            <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-structure.dita" xtrc="li:5;52:17">Ссылки &lt;xref&gt; — Перекрестные ссылки между различными файлами или секциями.</li>
+        </ul>
+    </conbody>
+</concept>

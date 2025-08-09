@@ -1,0 +1,179 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2025"><meta name="copyright" content="(C) Copyright 2025"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="concept"><meta name="description" content="Руководство по использованию изображений в технической документации с помощью элемента <image&gt;."><meta name="DC.relation" scheme="URI" content="dita-elements.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="element-image"><title>Элемент Image: работа с визуальным контентом в DITA</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="element-image"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Элемент Image: работа с визуальным контентом в DITA</h1>
+    
+    <div class="body conbody"><p class="shortdesc">Руководство по использованию изображений в технической документации с помощью элемента &lt;image&gt;.</p>
+        <section class="section" id="element-image__image_basics"><h2 class="title sectiontitle">Основы работы с изображениями</h2>
+            
+            <div class="p">Элемент <strong class="ph b">&lt;image&gt;</strong> — основной способ вставки визуального контента в DITA-документацию. Ключевые особенности:
+            <ul class="ul">
+                <li class="li">Поддерживаемые форматы: PNG, JPEG, SVG, GIF;</li>
+                <li class="li">Позволяет управлять отображением через атрибуты;</li>
+                <li class="li">Интегрируется с системами управления контентом (CMS);</li>
+                <li class="li">Обеспечивает доступность через альтернативны описания.</li>
+            </ul>
+            </div>
+            <div class="p">Базовый синтаксис:
+            <pre class="pre codeblock language-xml"><code><strong class="hl-tag">&lt;image</strong> <span class="hl-attribute">href</span>=<span class="hl-value">"digram.png"</span> <span class="hl-attribute">alt</span>=<span class="hl-value">"Схема работы системы"</span><strong class="hl-tag"> /&gt;</strong></code></pre>
+            </div>
+        </section>
+        <section class="section" id="element-image__image_attributes"><h2 class="title sectiontitle">Атрибуты элемента &lt;image&gt;</h2>
+            
+            <table class="simpletable"><colgroup><col style="width:25%"><col style="width:50%"><col style="width:25%"></colgroup><thead><tr class="sthead">
+                    <th class="stentry" scope="col" id="element-image__image_attributes__stentry__1">Атрибут</th>
+                    <th class="stentry" scope="col" id="element-image__image_attributes__stentry__2">Назначение</th>
+                    <th class="stentry" scope="col" id="element-image__image_attributes__stentry__3">Пример</th>
+                </tr></thead><tbody><tr class="strow">
+                    <td class="stentry" headers="element-image__image_attributes__stentry__1"><strong class="ph b">@href</strong></td>
+                    <td class="stentry" headers="element-image__image_attributes__stentry__2"><strong class="ph b">Обязательный</strong>. Путь к файлу изображения</td>
+                    <td class="stentry" headers="element-image__image_attributes__stentry__3"><code class="ph codeph">href="screenshots/login.png"</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="element-image__image_attributes__stentry__1"><strong class="ph b">@alt</strong></td>
+                    <td class="stentry" headers="element-image__image_attributes__stentry__2"><strong class="ph b">Обязательный для доступности</strong>. Альтернативный текст</td>
+                    <td class="stentry" headers="element-image__image_attributes__stentry__3"><code class="ph codeph">alt="Окно ввода логина"</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="element-image__image_attributes__stentry__1"><strong class="ph b">@width</strong><strong class="ph b">@height</strong></td>
+                    <td class="stentry" headers="element-image__image_attributes__stentry__2"><p class="p">Размеры в пикселях или процентах</p></td>
+                    <td class="stentry" headers="element-image__image_attributes__stentry__3"><code class="ph codeph">width="600" height="400"</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="element-image__image_attributes__stentry__1"><strong class="ph b">@scalfit</strong></td>
+                    <td class="stentry" headers="element-image__image_attributes__stentry__2"><p class="p">Автомасштабирование ("yes"/"no")</p></td>
+                    <td class="stentry" headers="element-image__image_attributes__stentry__3"><code class="ph codeph">scalfit="yes"</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="element-image__image_attributes__stentry__1"><strong class="ph b">@align</strong></td>
+                    <td class="stentry" headers="element-image__image_attributes__stentry__2"><p class="p">Выравнивание (left/right/center)</p></td>
+                    <td class="stentry" headers="element-image__image_attributes__stentry__3"><code class="ph codeph">align="center"</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="element-image__image_attributes__stentry__1"><strong class="ph b">@placement</strong></td>
+                    <td class="stentry" headers="element-image__image_attributes__stentry__2"><p class="p">Положение относительно текста (break/inline)</p></td>
+                    <td class="stentry" headers="element-image__image_attributes__stentry__3"><code class="ph codeph">placement="break"</code></td>
+                </tr></tbody></table>
+         </section>
+        <div class="example"><h2 class="title sectiontitle">Пример</h2>
+            
+            <pre class="pre codeblock language-xml"><code>
+                <strong class="hl-tag">&lt;image</strong> <span class="hl-attribute">href</span>=<span class="hl-value">"architecture.svg"</span> 
+                <span class="hl-attribute">alt</span>=<span class="hl-value">"Архитектура системы"</span>
+                <span class="hl-attribute">width</span>=<span class="hl-value">"80%"</span> 
+                <span class="hl-attribute">align</span>=<span class="hl-value">"center"</span>
+                <span class="hl-attribute">scalefit</span>=<span class="hl-value">"yes"</span>
+                <span class="hl-attribute">placement</span>=<span class="hl-value">"break"</span><strong class="hl-tag">/&gt;</strong>
+            </code></pre>
+        </div>
+        <section class="section" id="element-image__image_formats"><h2 class="title sectiontitle">Оптимальные форматы изображений</h2>
+            
+            <table class="simpletable"><colgroup><col style="width:33.33333333333333%"><col style="width:66.66666666666666%"></colgroup><thead><tr class="sthead">
+                    <th class="stentry" scope="col" id="element-image__image_formats__stentry__1">Формат</th>
+                    <th class="stentry" scope="col" id="element-image__image_formats__stentry__2">Применение</th>
+                    
+                </tr></thead><tbody><tr class="strow">
+                    <td class="stentry" headers="element-image__image_formats__stentry__1"><strong class="ph b">PNG</strong></td>
+                    <td class="stentry" headers="element-image__image_formats__stentry__2">Скриншоты, схемы с текстом</td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="element-image__image_formats__stentry__1"><strong class="ph b">JPEG</strong></td>
+                    <td class="stentry" headers="element-image__image_formats__stentry__2">Фотографии, сложные градиенты</td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="element-image__image_formats__stentry__1"><strong class="ph b">SVG</strong></td>
+                    <td class="stentry" headers="element-image__image_formats__stentry__2">Диаграммы, иконки. Лучшее решение для адаптивной верстки</td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="element-image__image_formats__stentry__1"><strong class="ph b">GIF</strong></td>
+                    <td class="stentry" headers="element-image__image_formats__stentry__2">Простые анимации</td>
+                </tr></tbody></table>
+            <div class="note important note_important"><span class="note__title">Important:</span> <div class="note__body">
+                <p class="p">Для векторной графики всегда используйте SVG. Это обеспечивает:</p>
+                <ul class="ul">
+                    <li class="li">Четкое отображение на любых разрешениях</li>
+                    <li class="li">Меньший размер файла</li>
+                    <li class="li">Возможность стилизации через CSS</li>
+                </ul>
+            </div></div>
+        </section>
+        <section class="section"><h2 class="title sectiontitle">Доступность изображений</h2>
+            
+            <p class="p">Правила для соответствия WCAG 2.1:</p>
+            <ol class="ol">
+                <li class="li"><strong class="ph b">Альтернативный текст (@alt):</strong>
+                <ul class="ul">
+                    <li class="li">Описание функциональных изображений (кнопки, иконки)</li>
+                    <li class="li">Краткое описание информативных изображений</li>
+                    <li class="li">Пустое значение для декоративных элементов: <code class="ph codeph">alt=""</code></li>
+                </ul>
+                </li>
+                <li class="li"><strong class="ph b">Сложные изображения:</strong> 
+                    <p class="p">Для диаграмм и графиков используйте комбинацию:</p>
+                    <pre class="pre codeblock language-xml"><code><strong class="hl-tag">&lt;fig&gt;</strong>
+                        <strong class="hl-tag">&lt;image</strong> <span class="hl-attribute">href</span>=<span class="hl-value">"chart.png"</span> <span class="hl-attribute">alt</span>=<span class="hl-value">"График роста продаж"</span><strong class="hl-tag">/&gt;</strong>
+                        <strong class="hl-tag">&lt;desc&gt;</strong>Подробное текстовое описание данных графика...<strong class="hl-tag">&lt;/desc&gt;</strong>
+                        <strong class="hl-tag">&lt;/fig&gt;</strong></code></pre>
+                </li>
+                <li class="li"><strong class="ph b">Контрастность:</strong> Минимальное соотношение 4.5:1 для текста в изображениях</li>
+            </ol>
+        </section>
+        <section class="section" id="element-image__image_fig"><h2 class="title sectiontitle">Использование с &lt;fig&gt;</h2>
+            
+            <p class="p">Основное назначение элемента<strong class="ph b">&lt;fig&gt;</strong> - контейнер для изображений и других медиаобъектов.</p>
+            <p class="p">Элемент <strong class="ph b">&lt;fig&gt;</strong> позволяет добавлять к изображениям:</p>
+            <ul class="ul">
+                <li class="li">Подписи (<strong class="ph b">&lt;title&gt;</strong>)</li>
+                <li class="li">Подробные описания (<strong class="ph b">&lt;desc&gt;</strong>)</li>
+                <li class="li">Нумерацию (автоматическую при публикации)</li>
+            </ul>
+            
+            <p class="p">Пример:</p>
+            <pre class="pre codeblock language-xml"><code><strong class="hl-tag">&lt;fig</strong> <span class="hl-attribute">id</span>=<span class="hl-value">"fig_login_sequence"</span><strong class="hl-tag">&gt;</strong>
+                <strong class="hl-tag">&lt;title&gt;</strong>Пример оформления через fig<strong class="hl-tag">&lt;/title&gt;</strong>
+                <strong class="hl-tag">&lt;image</strong> <span class="hl-attribute">href</span>=<span class="hl-value">"login_flow.png"</span> <span class="hl-attribute">alt</span>=<span class="hl-value">"Эмблема DITA"</span><strong class="hl-tag">/&gt;</strong>
+                <strong class="hl-tag">&lt;desc&gt;</strong>Рисунок 5. Эмблема приложения DITA<strong class="hl-tag">&lt;/desc&gt;</strong>
+                <strong class="hl-tag">&lt;/fig&gt;</strong></code></pre>
+            
+            <p class="p">Результат при публикации:</p>
+            <figure class="fig fignone"><figcaption><span class="fig--title-label">Figure 1. </span>Пример оформления через fig</figcaption>
+                
+                <img class="image" src="images/fig_example.jpg" width="400" alt="Эмблема DITA">
+                <p class="p">Рисунок 5. Эмблема приложения DITA</p>
+            </figure>
+        </section>
+        <section class="section" id="element-image__image_best_practices"><h2 class="title sectiontitle">Лучшие практики</h2>
+            
+            <ol class="ol">
+                <li class="li"><strong class="ph b">Оптимизация размеров:</strong>
+                    <ul class="ul">
+                        <li class="li">Максимальная ширина: 1200px для PDF, 800px для веба</li>
+                        <li class="li">Разрешение: 150 DPI для печати, 72 DPI для экранов</li>
+                    </ul>
+                </li>
+                <li class="li"><strong class="ph b">Организация файлов:</strong>
+                    <ul class="ul">
+                        <li class="li">Папка <span class="ph filepath">/images</span> в корне проекта</li>
+                        <li class="li">Подпапки по типам: <span class="ph filepath">/screenshots</span>, <span class="ph filepath">/diagrams</span></li>
+                    </ul>
+                </li>
+                <li class="li"><strong class="ph b">Именование:</strong>
+                    <ul class="ul">
+                        <li class="li">Латиница, нижний регистр</li>
+                        <li class="li">Осмысленные имена: <span class="ph filepath">user-profile-edit.png</span></li>
+                    </ul>
+                </li>
+                <li class="li"><strong class="ph b">Контроль версий:</strong> Хранить изображения в репозитории вместе с DITA-файлами</li>
+            </ol>
+        </section>
+            
+            <div class="example"><h2 class="title sectiontitle">Плохая vs хорошая практика</h2>
+                
+                <pre class="pre codeblock language-xml"><code><em class="hl-comment">&lt;!-- Плохо: --&gt;</em>
+                    <strong class="hl-tag">&lt;image</strong> <span class="hl-attribute">href</span>=<span class="hl-value">"img123.jpg"</span> <span class="hl-attribute">alt</span>=<span class="hl-value">"image"</span><strong class="hl-tag">/&gt;</strong>
+                    
+                    <em class="hl-comment">&lt;!-- Хорошо: --&gt;</em>
+                    <strong class="hl-tag">&lt;fig&gt;</strong>
+                    <strong class="hl-tag">&lt;title&gt;</strong>Настройка профиля<strong class="hl-tag">&lt;/title&gt;</strong>
+                    <strong class="hl-tag">&lt;image</strong> <span class="hl-attribute">href</span>=<span class="hl-value">"profile/settings-screen.png"</span> 
+                    <span class="hl-attribute">alt</span>=<span class="hl-value">"Экран настроек профиля"</span>
+                    <span class="hl-attribute">width</span>=<span class="hl-value">"800"</span>
+                    <span class="hl-attribute">scalefit</span>=<span class="hl-value">"yes"</span><strong class="hl-tag">/&gt;</strong>
+                    <strong class="hl-tag">&lt;desc&gt;</strong>Раздел управления персональными данными пользователя<strong class="hl-tag">&lt;/desc&gt;</strong>
+                    <strong class="hl-tag">&lt;/fig&gt;</strong></code></pre>
+            </div>
+        
+    </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="dita-elements.html" title="В этом разделе приведены основные элементы, используемые в создании DITA-топикв">Основные элементы DITA</a></div></div></nav></article></main></body></html>

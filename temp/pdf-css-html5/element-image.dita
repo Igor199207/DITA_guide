@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\HTML\DITA_guide\temp\pdf-css-html5?><?workdir-uri file:/D:/HTML/DITA_guide/temp/pdf-css-html5/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="element-image" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="concept:1;3:29" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="title:1;4:12">Элемент Image: работа с визуальным контентом в DITA</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="shortdesc:1;5:16">Руководство по использованию изображений в технической документации с помощью элемента &lt;image&gt;.</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="conbody:1;6:14">
+        <section id="image_basics" class="- topic/section " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="section:1;7:36">
+            <title class="- topic/title " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="title:2;8:20">Основы работы с изображениями</title>
+            <p class="- topic/p " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="p:1;9:16">Элемент <b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:1;9:27">&lt;image&gt;</b> — основной способ вставки визуального контента в DITA-документацию. Ключевые особенности:
+            <ul class="- topic/ul " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="ul:1;10:17">
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:1;11:21">Поддерживаемые форматы: PNG, JPEG, SVG, GIF;</li>
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:2;12:21">Позволяет управлять отображением через атрибуты;</li>
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:3;13:21">Интегрируется с системами управления контентом (CMS);</li>
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:4;14:21">Обеспечивает доступность через альтернативны описания.</li>
+            </ul>
+            </p>
+            <p class="- topic/p " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="p:2;17:16">Базовый синтаксис:
+            <codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="codeblock:1;18:51">&lt;image href="digram.png" alt="Схема работы системы" /&gt;</codeblock>
+            </p>
+        </section>
+        <section id="image_attributes" class="- topic/section " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="section:2;21:40">
+            <title class="- topic/title " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="title:3;22:20">Атрибуты элемента &lt;image&gt;</title>
+            <simpletable relcolwidth="1* 2* 1*" class="- topic/simpletable " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="simpletable:1;23:49">
+                <sthead class="- topic/sthead " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="sthead:1;24:25">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:1;25:30" dita-ot:x="1" dita-ot:y="1">Атрибут</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:2;26:30" dita-ot:x="2" dita-ot:y="1">Назначение</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:3;27:30" dita-ot:x="3" dita-ot:y="1">Пример</stentry>
+                </sthead>
+                <strow class="- topic/strow " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="strow:1;29:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:4;30:30" dita-ot:x="1" dita-ot:y="2"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:2;30:33">@href</b></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:5;31:30" dita-ot:x="2" dita-ot:y="2"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:3;31:33">Обязательный</b>. Путь к файлу изображения</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:6;32:30" dita-ot:x="3" dita-ot:y="2"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="codeph:1;32:38">href="screenshots/login.png"</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="strow:2;34:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:7;35:30" dita-ot:x="1" dita-ot:y="3"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:4;35:33">@alt</b></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:8;36:30" dita-ot:x="2" dita-ot:y="3"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:5;36:33">Обязательный для доступности</b>. Альтернативный текст</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:9;37:30" dita-ot:x="3" dita-ot:y="3"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="codeph:2;37:38">alt="Окно ввода логина"</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="strow:3;39:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:10;40:30" dita-ot:x="1" dita-ot:y="4"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:6;40:33">@width</b><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:7;40:46">@height</b></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:11;41:30" dita-ot:x="2" dita-ot:y="4"><p class="- topic/p " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="p:3;41:33">Размеры в пикселях или процентах</p></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:12;42:30" dita-ot:x="3" dita-ot:y="4"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="codeph:3;42:38">width="600" height="400"</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="strow:4;44:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:13;45:30" dita-ot:x="1" dita-ot:y="5"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:8;45:33">@scalfit</b></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:14;46:30" dita-ot:x="2" dita-ot:y="5"><p class="- topic/p " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="p:4;46:33">Автомасштабирование ("yes"/"no")</p></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:15;47:30" dita-ot:x="3" dita-ot:y="5"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="codeph:4;47:38">scalfit="yes"</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="strow:5;49:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:16;50:30" dita-ot:x="1" dita-ot:y="6"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:9;50:33">@align</b></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:17;51:30" dita-ot:x="2" dita-ot:y="6"><p class="- topic/p " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="p:5;51:33">Выравнивание (left/right/center)</p></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:18;52:30" dita-ot:x="3" dita-ot:y="6"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="codeph:5;52:38">align="center"</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="strow:6;54:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:19;55:30" dita-ot:x="1" dita-ot:y="7"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:10;55:33">@placement</b></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:20;56:30" dita-ot:x="2" dita-ot:y="7"><p class="- topic/p " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="p:6;56:33">Положение относительно текста (break/inline)</p></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:21;57:30" dita-ot:x="3" dita-ot:y="7"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="codeph:6;57:38">placement="break"</codeph></stentry>
+                </strow>
+            </simpletable>
+         </section>
+        <example class="- topic/example " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="example:1;61:18">
+            <title class="- topic/title " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="title:4;62:20">Пример</title>
+            <codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="codeblock:2;63:51">
+                &lt;image href="architecture.svg" 
+                alt="Архитектура системы"
+                width="80%" 
+                align="center"
+                scalefit="yes"
+                placement="break"/&gt;
+            </codeblock>
+        </example>
+        <section id="image_formats" class="- topic/section " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="section:3;72:37">
+            <title class="- topic/title " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="title:5;73:20">Оптимальные форматы изображений</title>
+            <simpletable relcolwidth="1* 2*" class="- topic/simpletable " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="simpletable:2;74:46">
+                <sthead class="- topic/sthead " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="sthead:2;75:25">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:22;76:30" dita-ot:x="1" dita-ot:y="1">Формат</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:23;77:30" dita-ot:x="2" dita-ot:y="1">Применение</stentry>
+                    
+                </sthead>
+                <strow class="- topic/strow " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="strow:7;80:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:24;81:30" dita-ot:x="1" dita-ot:y="2"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:11;81:33">PNG</b></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:25;82:30" dita-ot:x="2" dita-ot:y="2">Скриншоты, схемы с текстом</stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="strow:8;84:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:26;85:30" dita-ot:x="1" dita-ot:y="3"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:12;85:33">JPEG</b></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:27;86:30" dita-ot:x="2" dita-ot:y="3">Фотографии, сложные градиенты</stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="strow:9;88:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:28;89:30" dita-ot:x="1" dita-ot:y="4"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:13;89:33">SVG</b></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:29;90:30" dita-ot:x="2" dita-ot:y="4">Диаграммы, иконки. Лучшее решение для адаптивной верстки</stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="strow:10;92:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:30;93:30" dita-ot:x="1" dita-ot:y="5"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:14;93:33">GIF</b></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="stentry:31;94:30" dita-ot:x="2" dita-ot:y="5">Простые анимации</stentry>
+                </strow>
+            </simpletable>
+            <note type="important" class="- topic/note " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="note:1;97:36">
+                <p class="- topic/p " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="p:7;98:20">Для векторной графики всегда используйте SVG. Это обеспечивает:</p>
+                <ul class="- topic/ul " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="ul:2;99:21">
+                    <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:5;100:25">Четкое отображение на любых разрешениях</li>
+                    <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:6;101:25">Меньший размер файла</li>
+                    <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:7;102:25">Возможность стилизации через CSS</li>
+                </ul>
+            </note>
+        </section>
+        <section class="- topic/section " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="section:4;106:18">
+            <title class="- topic/title " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="title:6;107:20">Доступность изображений</title>
+            <p class="- topic/p " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="p:8;108:16">Правила для соответствия WCAG 2.1:</p>
+            <ol class="- topic/ol " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="ol:1;109:17">
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:8;110:21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:15;110:24">Альтернативный текст (@alt):</b>
+                <ul class="- topic/ul " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="ul:3;111:21">
+                    <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:9;112:25">Описание функциональных изображений (кнопки, иконки)</li>
+                    <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:10;113:25">Краткое описание информативных изображений</li>
+                    <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:11;114:25">Пустое значение для декоративных элементов: <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="codeph:7;114:77">alt=""</codeph></li>
+                </ul>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:12;117:21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:16;117:24">Сложные изображения:</b> 
+                    <p class="- topic/p " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="p:9;118:24">Для диаграмм и графиков используйте комбинацию:</p>
+                    <codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="codeblock:3;119:59">&lt;fig&gt;
+                        &lt;image href="chart.png" alt="График роста продаж"/&gt;
+                        &lt;desc&gt;Подробное текстовое описание данных графика...&lt;/desc&gt;
+                        &lt;/fig&gt;</codeblock>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:13;124:21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:17;124:24">Контрастность:</b> Минимальное соотношение 4.5:1 для текста в изображениях</li>
+            </ol>
+        </section>
+        <section id="image_fig" class="- topic/section " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="section:5;127:33">
+            <title class="- topic/title " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="title:7;128:20">Использование с &lt;fig&gt;</title>
+            <p class="- topic/p " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="p:10;129:16">Элемент <b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:18;129:27">&lt;fig&gt;</b> позволяет добавлять к изображениям:</p>
+            <ul class="- topic/ul " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="ul:4;130:17">
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:14;131:21">Подписи (<b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:19;131:33">&lt;title&gt;</b>)</li>
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:15;132:21">Подробные описания (<b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:20;132:44">&lt;desc&gt;</b>)</li>
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:16;133:21">Нумерацию (автоматическую при публикации)</li>
+            </ul>
+            
+            <p class="- topic/p " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="p:11;136:16">Структурный пример:</p>
+            <codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="codeblock:4;137:51">&lt;fig id="fig_login_sequence"&gt;
+                &lt;title&gt;Последовательность входа в систему&lt;/title&gt;
+                &lt;image href="login_flow.png" alt="Диаграмма последовательности входа"/&gt;
+                &lt;desc&gt;Пользователь вводит учетные данные (1), система проверяет их (2),...&lt;/desc&gt;
+                &lt;/fig&gt;</codeblock>
+            
+            <p class="- topic/p " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="p:12;143:16">Результат при публикации:</p>
+            <fig class="- topic/fig " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="fig:1;144:18">
+                <title class="- topic/title " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="title:8;145:24">Пример оформления через fig</title>
+                <image href="images/fig_example.png" scalefit="yes" width="500" alt="Пример нумерованной фигуры с подписью" placement="inline" class="- topic/image " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="image:1;146:126"/>
+                <p class="- topic/p " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="p:13;147:20">Рисунок 5. Последовательность входа в систему с описанием шагов</p>
+            </fig>
+        </section>
+        <section id="image_best_practices" class="- topic/section " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="section:6;150:44">
+            <title class="- topic/title " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="title:9;151:20">Лучшие практики</title>
+            <ol class="- topic/ol " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="ol:2;152:17">
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:17;153:21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:21;153:24">Оптимизация размеров:</b>
+                    <ul class="- topic/ul " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="ul:5;154:25">
+                        <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:18;155:29">Максимальная ширина: 1200px для PDF, 800px для веба</li>
+                        <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:19;156:29">Разрешение: 150 DPI для печати, 72 DPI для экранов</li>
+                    </ul>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:20;159:21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:22;159:24">Организация файлов:</b>
+                    <ul class="- topic/ul " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="ul:6;160:25">
+                        <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:21;161:29">Папка <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="filepath:1;161:45">/images</filepath> в корне проекта</li>
+                        <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:22;162:29">Подпапки по типам: <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="filepath:2;162:58">/screenshots</filepath>, <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="filepath:3;162:93">/diagrams</filepath></li>
+                    </ul>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:23;165:21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:23;165:24">Именование:</b>
+                    <ul class="- topic/ul " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="ul:7;166:25">
+                        <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:24;167:29">Латиница, нижний регистр</li>
+                        <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:25;168:29">Осмысленные имена: <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="filepath:4;168:58">user-profile-edit.png</filepath></li>
+                    </ul>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="li:26;171:21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="b:24;171:24">Контроль версий:</b> Хранить изображения в репозитории вместе с DITA-файлами</li>
+            </ol>
+        </section>
+            
+            <example class="- topic/example " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="example:2;175:22">
+                <title class="- topic/title " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="title:10;176:24">Плохая vs хорошая практика</title>
+                <codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/HTML/DITA_guide/element-image.dita" xtrc="codeblock:5;177:55">&lt;!-- Плохо: --&gt;
+                    &lt;image href="img123.jpg" alt="image"/&gt;
+                    
+                    &lt;!-- Хорошо: --&gt;
+                    &lt;fig&gt;
+                    &lt;title&gt;Настройка профиля&lt;/title&gt;
+                    &lt;image href="profile/settings-screen.png" 
+                    alt="Экран настроек профиля"
+                    width="800"
+                    scalefit="yes"/&gt;
+                    &lt;desc&gt;Раздел управления персональными данными пользователя&lt;/desc&gt;
+                    &lt;/fig&gt;</codeblock>
+            </example>
+        
+    </conbody>
+</concept>

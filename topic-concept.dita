@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="topic-concept">
+    <title>Топик Concept в DITA</title>
+    <shortdesc>Основной элемент для описания теорий, принципов и абстрактных концепций в структурированной документации</shortdesc>
+    <conbody>
+        <section id="purpose">
+            <title>Назначение топика Concept</title>
+            <p>Топик типа <codeph>concept</codeph> используется для обозначения:</p>
+            <ul>
+                <li>Теоретических основ и принципов работы;</li>
+                <li>Архитектурных решений и моделей;</li>
+                <li>Абстрактных понятий и терминологий;</li>
+                <li>Контекста использования технологии.</li>
+            </ul>
+            <p><b>Отличия от других топиков:</b></p>
+            <simpletable>
+                <sthead>
+                    <stentry>Тип топика</stentry>
+                    <stentry>Назначение</stentry>
+                </sthead>
+                <strow>
+                    <stentry><codeph>task</codeph></stentry>
+                    <stentry>Последовательность действи</stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>reference</codeph></stentry>
+                    <stentry>Справочные данные</stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>concept</codeph></stentry>
+                    <stentry>Теоретические знания</stentry>
+                </strow>
+            </simpletable>
+        </section>
+        
+        <section id="structure">
+            <title>Структура топика</title>
+            <p>Базовый каркас concept-топика в Oxygen:</p>
+            <codeblock>&lt;concept id="unique_id"&gt;
+                &lt;title&gt;заголовок&lt;/title&gt;
+                &lt;shortdesc&gt;краткое описание&lt;/shortdesc&lt;
+                &lt;conbody&gt;
+                    &lt;section&gt;&lt;title&gt;подраздел&lt;/title&gt;&lt;/section&gt;
+                    &lt;example>&lt;title>пример&lt;/title>...&lt;/example>
+                &lt;/conbody>
+                &lt;/concept>
+            </codeblock>
+            
+            <dl>
+                <dlentry>
+                    <dt><codeph>&lt;title></codeph></dt>
+                    <dd>Обязательный элемент. Формулирует суть концепции в 5-7 словах</dd>
+                </dlentry>
+                <dlentry>
+                    <dt><codeph>&lt;schortdesc></codeph></dt>
+                    <dd>1-2 предложения для предпросмотра в картах и поиска</dd>
+                </dlentry>
+                <dlentry>
+                    <dt><codeph>&lt;conbody></codeph></dt>
+                    <dd>Контейнер для основного контента с семантической разметкой</dd>
+                </dlentry>
+            </dl>
+        </section>
+        
+        <section id="best_practices">
+            <title>Принципы создания эффетивных топиков типа "concept";</title>
+            <ul>
+                <li><b>Один топик = одна тема</b> - избегайте смешения тем;</li>
+                <li><b>Иерархичность</b> - используйте вложеные<codeph>&lt;section></codeph></li>
+                <li><b>Визуализация</b> - добавляйте схемы через <codeph>&lt;fig></codeph>:
+                    <codeblock>&lt;fig id="sxema"
+    &lt;title>Схема архитектуры&lt;/title>
+    &lt;image href="images/architecture.svg"/>
+&lt;/fig>
+                    </codeblock>
+                </li>
+                <li><b>Примеры обязательны</b>- элемент <codeph>&lt;example></codeph>повышает внимание.</li>
+            </ul>
+        </section>
+        
+        <section id="oxygen_specific">
+            <title>Работа в Oxygen Editor</title>
+            <p><b>Создание топика:</b></p>
+            <ol>
+                <li>Нажмите <uicontrol>CTRL+N</uicontrol></li>
+                <li>Выберите <menucascade>
+                        <uicontrol>DITA</uicontrol><uicontrol>Concept</uicontrol>
+                </menucascade></li>
+                <li>Заполните обязательные поля в шаблоне</li>
+            </ol>
+            <p><b>Ключевые возможности:</b></p>
+            <ul>
+                <li>Визуальное редактирование во вкладке <uicontrol>Author</uicontrol></li>
+                <li>Быстрая вставка элементов через панель <uicontrol>Insert</uicontrol></li>
+                <li>Проверка структуры в <uicontrol>DITA Maps Manager</uicontrol></li>
+            </ul>
+        </section>
+        <example id="concept_example">
+            <title>Пример топика "concept": Безопасность облачных сервисов</title>
+            <codeblock>&lt;concept id="cloud_security">
+                &lt;title>Модель Shared Responsibility&lt;/title>
+                &lt;shortdesc>Распределение зон ответственности между провайдером и клиентом.&lt;/shortdesc>
+                &lt;conbody>
+                &lt;p>Поставщик отвечает за:&lt;/p>
+                &lt;ul>
+                &lt;li>Физическую безопасность ЦОД&lt;/li>
+                &lt;li>Гипервизор и сетевую инфраструктуру&lt;/li>
+                &lt;/ul>
+                &lt;example>
+                &lt;title>AWS EC2&lt;/title>
+                &lt;p>Пользователь управляет: ОС, приложениями, правилами фаервола.&lt;/p>
+                &lt;/example>
+                &lt;/conbody>
+                &lt;/concept></codeblock>
+        </example>
+        <section id="integration">
+            <title>Интеграция в DITA-карту</title>
+            <p>Добавьте в <filepath>.ditamap</filepath>:</p>
+            <codeblock>&lt;map>
+                &lt;topicref href="topic-concept.dita"
+                navtitle="Описание топика Concept"/>
+                &lt;/map></codeblock>
+            <note>Атрибут <codeph>navtitle</codeph> переопределяет заголовок в навигации</note>
+        </section>
+    </conbody>
+</concept>

@@ -1,0 +1,82 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2025"><meta name="copyright" content="(C) Copyright 2025"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="reference"><meta name="description" content="В этом разделе приведены основные элементы, используемые в создании DITA-топикв"><meta name="DC.relation" scheme="URI" content="element-note.html"><meta name="DC.relation" scheme="URI" content="element-image.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="reference_first"><title>Основные элементы DITA</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="reference_first"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Основные элементы DITA</h1>
+    
+    <div class="body refbody"><p class="shortdesc">В этом разделе приведены основные элементы, используемые в создании DITA-топикв</p>
+        <section class="section"><h2 class="title sectiontitle">Описание элементов</h2>
+            
+            <p class="p">В таблице ниже приведены основные элементы, которые используются для структурирования информации в DITA-топиках</p>
+            <table class="simpletable"><colgroup><col style="width:20%"><col style="width:40%"><col style="width:40%"></colgroup><thead><tr class="sthead">
+                    <th class="stentry" scope="col" id="reference_first__stentry__1">Элемент</th>
+                    <th class="stentry" scope="col" id="reference_first__stentry__2">Описание</th>
+                    <th class="stentry" scope="col" id="reference_first__stentry__3">Пример использования</th>
+                </tr></thead><tbody><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;title&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Заголовок топика или раздела.</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">&lt;title&gt;Как использовать DITA&lt;/title&gt;</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;shortdesc&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Краткое описание содержания топика.</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">&lt;shortdesc&gt;Краткое введение в тему.&lt;/shortdesc&gt;</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;body&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Основная часть топика (для concept и task).</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">&lt;body&gt;...&lt;/body&gt;</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;section&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Раздел внутри топика для логического деления информации.</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">&lt;section&gt;...&lt;/section&gt;</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;p&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Абзац текста. Используется для оформления обычного текста.</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">&lt;p&gt;Это пример абзаца в DITA.&lt;p&gt;</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;ul&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Неупорядоченный (маркированный) список.</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">&lt;ul&gt;&lt;li&gt;Пункт 1&lt;/li&gt;&lt;li&gt;Пункт 2&lt;/li&gt;&lt;/ul&gt;</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;ol&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Упорядоченный (нумерованный) список.</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">&lt;ol&gt;&lt;li&gt;Шаг 1&lt;/li&gt;&lt;li&gt;Шаг 2&lt;/li&gt;&lt;/ol&gt;</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;li&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Элемент списка (пункт). Используется внутри &lt;ul&gt; или &lt;ol&gt;.</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">&lt;li&gt;Пункт списка&lt;/li&gt;</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;note&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Примечание, выделяет важную информацию, предупреждение или совет. Атрибут type задаёт тип примечания. В зависимости от значения type, при публикации документации (например, в PDF или HTML) примечание будет оформлено по-разному. Подробнее смотри <a class="xref" href="element-note.html" title="Использование элемента <note&gt;">Элемент Note</a>.
+                    </td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">&lt;note type="tip"&gt;Это полезный совет.&lt;/note&gt;</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1">&lt;image&gt;</td>
+                    <td class="stentry" headers="reference_first__stentry__2">Вставка изображения в документ. Подробнее смотри <a class="xref" href="element-image.html" title="Руководство по использованию изображений в технической документации с помощью элемента <image&gt;.">Элемент Image: работа с визуальным контентом в DITA</a>.</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">&lt;image href="diagram.png" alt="Диаграмма процесса" width="100px" height="50px"&gt;</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;steps&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Список шагов для выполнения задачи (используется в task).</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">&lt;steps&gt;&lt;step&gt;...&lt;/step&gt;&lt;/steps&gt;</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;simpletable&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Простая таблица для представления структурированных данных.</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">&lt;simpletable&gt;...&lt;/simpletable&gt;</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;ph&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Фраза, выделение части текста.</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">Убедитесь, что &lt;ph&gt;антивирус отключен&lt;/ph&gt;перед установкой.</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;codeph&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Выделение фразы кода.</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">Введите команду&lt;codeph&gt;install.exe /silent&lt;codeph&gt;в командной строке</code></td>
+                </tr><tr class="strow">
+                    <td class="stentry" headers="reference_first__stentry__1"><code class="ph codeph">&lt;menucascade&gt;</code></td>
+                    <td class="stentry" headers="reference_first__stentry__2">Используем когда нужно показать последовательность действий в меню (например, как пройти по пунктам меню в программе)</td>
+                    <td class="stentry" headers="reference_first__stentry__3"><code class="ph codeph">&lt;li&gt;Выберите &lt;menucascade&gt;&lt;uicontrol&gt;DITA&lt;/uicontrol&gt;&lt;uicontrol&gt;Concept&lt;/uicontrol&gt;&lt;/menucascade&gt;&lt;/li&gt;</code></td>
+                </tr></tbody></table>
+        </section>
+        <section class="section"><h2 class="title sectiontitle">Дополнительные ресурсы</h2>
+            
+            <p class="p">Более подробную информацию о DITA-элементах можно найти в <a class="xref" href="https://docs.oasis-open.org/dita/dita/v1.3/os/part3-all-inclusive/langref/dita-langref.html" target="_blank" rel="external noopener">официальной документации DITA</a>.</p>
+        </section>
+    </div>
+<nav role="navigation" class="related-links"><ul class="ullinks"><li class="link ulchildlink"><strong><a href="element-note.html">Элемент Note</a></strong><br>Использование элемента &lt;note&gt;</li><li class="link ulchildlink"><strong><a href="element-image.html">Элемент Image: работа с визуальным контентом в DITA</a></strong><br>Руководство по использованию изображений в технической документации с помощью элемента &lt;image&gt;.</li></ul></nav></article></main></body></html>

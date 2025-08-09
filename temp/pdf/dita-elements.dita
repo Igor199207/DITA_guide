@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\DITA_guide\temp\pdf?><?workdir-uri file:/D:/DITA_guide/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="reference_first" ditaarch:DITAArchVersion="1.3" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic       reference/reference " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="reference:1;3:33" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="title:1;4:12">Основные элементы DITA</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="shortdesc:1;5:16">В этом разделе приведены основные элементы, используемые в создании DITA-топикв</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="refbody:1;6:14">
+        <section class="- topic/section " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="section:1;7:18">
+            <title class="- topic/title " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="title:2;8:20">Описание элементов</title>
+            <p class="- topic/p " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="p:1;9:16">В таблице ниже приведены основные элементы, которые используются для структурирования информации в DITA-топиках</p>
+            <simpletable class="- topic/simpletable " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="simpletable:1;10:26">
+                <sthead class="- topic/sthead " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="sthead:1;11:25">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:1;12:30" dita-ot:x="1" dita-ot:y="1">Элемент</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:2;13:30" dita-ot:x="2" dita-ot:y="1">Описание</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:3;14:30" dita-ot:x="3" dita-ot:y="1">Пример использования</stentry>
+                </sthead>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:1;16:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:4;17:30" dita-ot:x="1" dita-ot:y="2"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:1;17:38">&lt;title&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:5;18:30" dita-ot:x="2" dita-ot:y="2">Заголовок топика или раздела.</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:6;19:30" dita-ot:x="3" dita-ot:y="2"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:2;19:38">&lt;title&gt;Как использовать DITA&lt;/title&gt;</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:2;21:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:7;22:30" dita-ot:x="1" dita-ot:y="3"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:3;22:38">&lt;shortdesc&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:8;23:30" dita-ot:x="2" dita-ot:y="3">Краткое описание содержания топика.</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:9;24:30" dita-ot:x="3" dita-ot:y="3"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:4;24:38">&lt;shortdesc&gt;Краткое введение в тему.&lt;/shortdesc&gt;</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:3;26:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:10;27:30" dita-ot:x="1" dita-ot:y="4"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:5;27:38">&lt;body&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:11;28:30" dita-ot:x="2" dita-ot:y="4">Основная часть топика (для concept и task).</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:12;29:30" dita-ot:x="3" dita-ot:y="4"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:6;29:38">&lt;body&gt;...&lt;/body&gt;</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:4;31:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:13;32:30" dita-ot:x="1" dita-ot:y="5"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:7;32:38">&lt;section&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:14;33:30" dita-ot:x="2" dita-ot:y="5">Раздел внутри топика для логического деления информации.</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:15;34:30" dita-ot:x="3" dita-ot:y="5"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:8;34:38">&lt;section&gt;...&lt;/section&gt;</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:5;36:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:16;37:30" dita-ot:x="1" dita-ot:y="6"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:9;37:38">&lt;p&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:17;38:30" dita-ot:x="2" dita-ot:y="6">Абзац текста. Используется для оформления обычного текста.</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:18;39:30" dita-ot:x="3" dita-ot:y="6"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:10;39:38">&lt;p&gt;Это пример абзаца в DITA.&lt;p&gt;</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:6;41:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:19;42:30" dita-ot:x="1" dita-ot:y="7"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:11;42:38">&lt;ul&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:20;43:30" dita-ot:x="2" dita-ot:y="7">Неупорядоченный (маркированный) список.</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:21;44:30" dita-ot:x="3" dita-ot:y="7"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:12;44:38">&lt;ul&gt;&lt;li&gt;Пункт 1&lt;/li&gt;&lt;li&gt;Пункт 2&lt;/li&gt;&lt;/ul&gt;</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:7;46:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:22;47:30" dita-ot:x="1" dita-ot:y="8"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:13;47:38">&lt;ol&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:23;48:30" dita-ot:x="2" dita-ot:y="8">Упорядоченный (нумерованный) список.</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:24;49:30" dita-ot:x="3" dita-ot:y="8"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:14;49:38">&lt;ol&gt;&lt;li&gt;Шаг 1&lt;/li&gt;&lt;li&gt;Шаг 2&lt;/li&gt;&lt;/ol&gt;</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:8;51:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:25;52:30" dita-ot:x="1" dita-ot:y="9"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:15;52:38">&lt;li&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:26;53:30" dita-ot:x="2" dita-ot:y="9">Элемент списка (пункт). Используется внутри &lt;ul&gt; или &lt;ol&gt;.</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:27;54:30" dita-ot:x="3" dita-ot:y="9"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:16;54:38">&lt;li&gt;Пункт списка&lt;/li&gt;</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:9;56:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:28;57:30" dita-ot:x="1" dita-ot:y="10"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:17;57:38">&lt;note&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:29;58:30" dita-ot:x="2" dita-ot:y="10">Примечание, выделяет важную информацию, предупреждение или совет. Атрибут type задаёт тип примечания. В зависимости от значения type, при публикации документации (например, в PDF или HTML) примечание будет оформлено по-разному. Например, совет (tip) может быть выделен специальной иконкой или цветом, чтобы привлечь внимание пользователя к полезной информации.В DITA предусмотрены стандартные значения для этого атрибута, такие как:
+                    <ul class="- topic/ul " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="ul:1;59:25">
+                        <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="li:1;60:29">tip — совет, полезная подсказка:</li>
+                        <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="li:2;61:29">warning — предупреждение;</li>
+                        <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="li:3;62:29">caution — предостережение;</li>
+                        <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="li:4;63:29">important — важная информация;</li>
+                        <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="li:5;64:29">remember — напоминание.</li>
+                    </ul>
+                    </stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:30;67:30" dita-ot:x="3" dita-ot:y="10"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:18;67:38">&lt;note type="tip"&gt;Это полезный совет.&lt;/note&gt;</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:10;69:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:31;70:30" dita-ot:x="1" dita-ot:y="11">&lt;image&gt;</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:32;71:30" dita-ot:x="2" dita-ot:y="11">Вставка изображения в документ. Основные атрибуты:
+                    <ul class="- topic/ul " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="ul:2;72:25">
+                        <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="li:6;73:29">href — обязательный атрибут, указывает путь к файлу изображения (относительный или абсолютный);</li>
+                        <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="li:7;74:29">alt — альтернативный текст, который отображается, если изображение не может быть загружено, а также используется для доступности (например, для экранных читалок);</li>
+                        <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="li:8;75:29">height и width — позволяют задать высоту и ширину изображения (обычно в пикселях);</li>
+                        <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="li:9;76:29">placement — определяет, как изображение будет размещено относительно текста (например, inline или break);</li>
+                        <li class="- topic/li " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="li:10;77:29">scalefit — если указано значение "yes", изображение будет масштабироваться, чтобы поместиться в доступное пространство.</li>
+                    </ul></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:33;79:30" dita-ot:x="3" dita-ot:y="11">&lt;image href="diagram.png" alt="Диаграмма процесса" width="100px" height="50px"&gt;</stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:11;81:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:34;82:30" dita-ot:x="1" dita-ot:y="12"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:19;82:38">&lt;steps&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:35;83:30" dita-ot:x="2" dita-ot:y="12">Список шагов для выполнения задачи (используется в task).</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:36;84:30" dita-ot:x="3" dita-ot:y="12"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:20;84:38">&lt;steps&gt;&lt;step&gt;...&lt;/step&gt;&lt;/steps&gt;</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:12;86:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:37;87:30" dita-ot:x="1" dita-ot:y="13"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:21;87:38">&lt;simpletable&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:38;88:30" dita-ot:x="2" dita-ot:y="13">Простая таблица для представления структурированных данных.</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:39;89:30" dita-ot:x="3" dita-ot:y="13"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:22;89:38">&lt;simpletable&gt;...&lt;/simpletable&gt;</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:13;91:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:40;92:30" dita-ot:x="1" dita-ot:y="14"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:23;92:38">&lt;ph&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:41;93:30" dita-ot:x="2" dita-ot:y="14">Фраза, выделение части текста.</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:42;94:30" dita-ot:x="3" dita-ot:y="14"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:24;94:38">Убедитесь, что &lt;ph&gt;антивирус отключен&lt;/ph&gt;перед установкой.</codeph></stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="strow:14;96:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:43;97:30" dita-ot:x="1" dita-ot:y="15"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:25;97:38">&lt;codeph&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:44;98:30" dita-ot:x="2" dita-ot:y="15">Выделение фразы кода.</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="stentry:45;99:30" dita-ot:x="3" dita-ot:y="15"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="codeph:26;99:38">Введите команду&lt;codeph&gt;install.exe /silent&lt;codeph&gt;в командной строке</codeph></stentry>
+                </strow>
+            </simpletable>
+        </section>
+        <section class="- topic/section " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="section:2;103:18">
+            <title class="- topic/title " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="title:3;104:20">Дополнительные ресурсы</title>
+            <p class="- topic/p " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="p:2;105:16">Более подробную информацию о DITA-элементах можно найти в <xref href="https://docs.oasis-open.org/dita/dita/v1.3/os/part3-all-inclusive/langref/dita-langref.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/DITA_guide/dita-elements.dita" xtrc="xref:1;105:210"><?ditaot usertext?>официальной документации DITA</xref>.</p>
+        </section>
+    </refbody>
+</reference>

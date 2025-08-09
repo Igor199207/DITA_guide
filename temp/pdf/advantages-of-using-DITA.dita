@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\DITA_guide\temp\pdf?><?workdir-uri file:/D:/DITA_guide/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="advantages-of-using-DITA" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/DITA_guide/advantages-of-using-DITA.dita" xtrc="concept:1;3:40" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/DITA_guide/advantages-of-using-DITA.dita" xtrc="title:1;4:12">Преимущества использования DITA</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/D:/DITA_guide/advantages-of-using-DITA.dita" xtrc="shortdesc:1;5:16">Преимущества стандарта DITA</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrf="file:/D:/DITA_guide/advantages-of-using-DITA.dita" xtrc="conbody:1;6:14">
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/advantages-of-using-DITA.dita" xtrc="p:1;7:12"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/advantages-of-using-DITA.dita" xtrc="b:1;7:15">Повышение качества технической документации</b></p>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/advantages-of-using-DITA.dita" xtrc="p:2;8:12">Стандарт позволяет четко организовать и систематизировать информацию, обеспечивая единообразие и точность содержания. 
+           Благодаря строгой структуре авторы получают возможность быстро находить нужные материалы и обеспечивать высокую степень согласованности между различными частями документации.</p>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/advantages-of-using-DITA.dita" xtrc="p:3;10:12"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/advantages-of-using-DITA.dita" xtrc="b:2;10:15">Возможность многократного использования контента</b></p>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/advantages-of-using-DITA.dita" xtrc="p:4;11:12">Одним из ключевых преимуществ DITA является способность повторно использовать части текста в нескольких документах. 
+           Например, одна инструкция может использоваться одновременно в руководстве пользователя и справочном пособии разработчика, сокращая объем работ и повышая производительность авторов.</p>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/advantages-of-using-DITA.dita" xtrc="p:5;13:12"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/advantages-of-using-DITA.dita" xtrc="b:3;13:15">Автоматизация процессов публикации документов</b></p>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/advantages-of-using-DITA.dita" xtrc="p:6;14:12">Использование DITA упрощает автоматизацию публикации технической документации в различные форматы (PDF, HTML, CHM и др.). 
+           Это позволяет сократить трудозатраты и избежать ошибок, связанных с ручным редактированием документов перед публикацией.</p>
+        
+    </conbody>
+</concept>

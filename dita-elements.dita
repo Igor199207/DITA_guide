@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_first">
+    <title>Основные элементы и термины DITA</title>
+    <shortdesc>В этом разделе приведены основные элементы, используемые в создании DITA-топиков и организации публикаций.</shortdesc>
+    <refbody>
+        <section>
+            <title>Описание элементов</title>
+            <p>В таблице ниже приведены основные элементы, которые применяются для структурирования, форматирования и организации контента.</p>
+            <simpletable relcolwidth="1* 2* 2*">
+                <sthead>
+                    <stentry>Элемент/понятие</stentry>
+                    <stentry>Описание</stentry>
+                    <stentry>Пример использования</stentry>
+                </sthead>
+                <strow>
+                    <stentry><codeph>&lt;title&gt;</codeph></stentry>
+                    <stentry>Заголовок топика или раздела.</stentry>
+                    <stentry><codeph>&lt;title&gt;Как использовать DITA&lt;/title&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;shortdesc&gt;</codeph></stentry>
+                    <stentry>Краткое описание содержания топика (один абзац).</stentry>
+                    <stentry><codeph>&lt;shortdesc&gt;Краткое введение в тему.&lt;/shortdesc&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;body&gt;</codeph></stentry>
+                    <stentry>Основная часть топика (для concept и task).</stentry>
+                    <stentry><codeph>&lt;body&gt;...&lt;/body&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;section&gt;</codeph></stentry>
+                    <stentry>Раздел внутри топика для логического деления информации.</stentry>
+                    <stentry><codeph>&lt;section&gt;...&lt;/section&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;p&gt;</codeph></stentry>
+                    <stentry>Абзац текста. Используется для оформления обычного текста.</stentry>
+                    <stentry><codeph>&lt;p&gt;Это пример абзаца в DITA.&lt;p&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;ul&gt;</codeph></stentry>
+                    <stentry>Неупорядоченный (маркированный) список.</stentry>
+                    <stentry><codeph>&lt;ul&gt;&lt;li&gt;Пункт 1&lt;/li&gt;&lt;li&gt;Пункт 2&lt;/li&gt;&lt;/ul&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;ol&gt;</codeph></stentry>
+                    <stentry>Упорядоченный (нумерованный) список.</stentry>
+                    <stentry><codeph>&lt;ol&gt;&lt;li&gt;Шаг 1&lt;/li&gt;&lt;li&gt;Шаг 2&lt;/li&gt;&lt;/ol&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;li&gt;</codeph></stentry>
+                    <stentry>Элемент списка (пункт). Используется внутри &lt;ul&gt; или &lt;ol&gt;.</stentry>
+                    <stentry><codeph>&lt;li&gt;Пункт списка&lt;/li&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;note&gt;</codeph></stentry>
+                    <stentry>Примечание, выделяет важную информацию, предупреждение или совет. Атрибут type задаёт тип примечания. В зависимости от значения type, при публикации документации (например, в PDF или HTML) примечание будет оформлено по-разному. Подробнее смотри <xref href="element-note.dita" />.
+                    </stentry>
+                    <stentry><codeph>&lt;note type="tip"&gt;Это полезный совет.&lt;/note&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;image&gt;</codeph></stentry>
+                    <stentry>Вставка изображения в документ. Подробнее смотри <xref href="element-image.dita" />.</stentry>
+                    <stentry><codeph>&lt;image href="diagram.png" alt="Диаграмма процесса" width="100px" height="50px"&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;steps&gt;</codeph></stentry>
+                    <stentry>Список шагов для выполнения задачи (используется в task).</stentry>
+                    <stentry><codeph>&lt;steps&gt;&lt;step&gt;...&lt;/step&gt;&lt;/steps&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;step&gt;</codeph></stentry>
+                    <stentry>Один шаг инструкции внутри task.</stentry>
+                    <stentry><codeph>&lt;step&gt;&lt;cmd&gt;Действие&lt;/cmd&gt;&lt;/step&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;cmd&gt;</codeph></stentry>
+                    <stentry>Описание действия в шаге.</stentry>
+                    <stentry><codeph>&lt;cmd&gt;Нажмите кнопку Save&lt;/cmd&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;simpletable&gt;</codeph></stentry>
+                    <stentry>Простая таблица для представления структурированных данных.</stentry>
+                    <stentry><codeph>&lt;simpletable&gt;...&lt;/simpletable&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;ph&gt;</codeph></stentry>
+                    <stentry>Фраза, выделение части текста внутри абзаца.</stentry>
+                    <stentry><codeph>Убедитесь, что &lt;ph&gt;антивирус отключен&lt;/ph&gt;перед установкой.</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;codeph&gt;</codeph></stentry>
+                    <stentry>Выделение фразы кода.</stentry>
+                    <stentry><codeph>Введите команду&lt;codeph&gt;install.exe /silent&lt;codeph&gt;в командной строке</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;menucascade&gt;</codeph></stentry>
+                    <stentry>Используем когда нужно показать последовательность действий в меню (например, как пройти по пунктам меню в программе)</stentry>
+                    <stentry><codeph>&lt;li>Выберите &lt;menucascade>&lt;uicontrol>DITA&lt;/uicontrol>&lt;uicontrol>Concept&lt;/uicontrol>&lt;/menucascade>&lt;/li></codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>&lt;uicontrol&gt;</codeph></stentry>
+                    <stentry>Название элемента управления в UI.</stentry>
+                    <stentry><codeph>&lt;uicontrol&gt;Save&lt;/uicontrol&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>map</codeph></stentry>
+                    <stentry>DITA-карта для организации публикаций, может содержать любые topicref.</stentry>
+                    <stentry><codeph>&lt;map&gt;...&lt;/map&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>bookmap</codeph></stentry>
+                    <stentry>Специализированная карта для печатных изданий и PDF, имеет главы, приложения, титул.</stentry>
+                    <stentry><codeph>&lt;bookmap&gt;...&lt;/bookmap&gt;</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry>topicref</stentry>
+                    <stentry>Ссылка на топик или карту внутри карты.</stentry>
+                    <stentry><codeph>&lt;topicref href="intro.dita"/&gt;</codeph></stentry>
+                </strow>
+            </simpletable>
+        </section>
+        <section>
+            <title>Дополнительные ресурсы</title>
+            <p>Более подробную информацию о DITA-элементах можно найти в <xref href="https://docs.oasis-open.org/dita/dita/v1.3/os/part3-all-inclusive/langref/dita-langref.html" format="html" scope="external">официальной документации DITA</xref>.</p>
+        </section>
+    </refbody>
+</reference>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="element-image">
+    <title>Элемент Image: работа с визуальным контентом в DITA</title>
+    <shortdesc>Руководство по использованию изображений в технической документации с помощью элемента &lt;image&gt;.</shortdesc>
+    <conbody>
+        <section id="image_basics">
+            <title>Основы работы с изображениями</title>
+            <p>Элемент <b>&lt;image&gt;</b> — основной способ вставки визуального контента в DITA-документацию. Ключевые особенности:
+            <ul>
+                <li>Поддерживаемые форматы: PNG, JPEG, SVG, GIF;</li>
+                <li>Позволяет управлять отображением через атрибуты;</li>
+                <li>Интегрируется с системами управления контентом (CMS);</li>
+                <li>Обеспечивает доступность через альтернативны описания.</li>
+            </ul>
+            </p>
+            <p>Базовый синтаксис:
+            <codeblock outputclass="language-xml">&lt;image href="digram.png" alt="Схема работы системы" /&gt;</codeblock>
+            </p>
+        </section>
+        <section id="image_attributes">
+            <title>Атрибуты элемента &lt;image&gt;</title>
+            <simpletable relcolwidth="1* 2* 1*">
+                <sthead>
+                    <stentry>Атрибут</stentry>
+                    <stentry>Назначение</stentry>
+                    <stentry>Пример</stentry>
+                </sthead>
+                <strow>
+                    <stentry><b>@href</b></stentry>
+                    <stentry><b>Обязательный</b>. Путь к файлу изображения</stentry>
+                    <stentry><codeph>href="screenshots/login.png"</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><b>@alt</b></stentry>
+                    <stentry><b>Обязательный для доступности</b>. Альтернативный текст</stentry>
+                    <stentry><codeph>alt="Окно ввода логина"</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><b>@width</b><b>@height</b></stentry>
+                    <stentry><p>Размеры в пикселях или процентах</p></stentry>
+                    <stentry><codeph>width="600" height="400"</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><b>@scalfit</b></stentry>
+                    <stentry><p>Автомасштабирование ("yes"/"no")</p></stentry>
+                    <stentry><codeph>scalfit="yes"</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><b>@align</b></stentry>
+                    <stentry><p>Выравнивание (left/right/center)</p></stentry>
+                    <stentry><codeph>align="center"</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><b>@placement</b></stentry>
+                    <stentry><p>Положение относительно текста (break/inline)</p></stentry>
+                    <stentry><codeph>placement="break"</codeph></stentry>
+                </strow>
+            </simpletable>
+         </section>
+        <example>
+            <title>Пример</title>
+            <codeblock outputclass="language-xml">
+                &lt;image href="architecture.svg" 
+                alt="Архитектура системы"
+                width="80%" 
+                align="center"
+                scalefit="yes"
+                placement="break"/&gt;
+            </codeblock>
+        </example>
+        <section id="image_formats">
+            <title>Оптимальные форматы изображений</title>
+            <simpletable relcolwidth="1* 2*">
+                <sthead>
+                    <stentry>Формат</stentry>
+                    <stentry>Применение</stentry>
+                    
+                </sthead>
+                <strow>
+                    <stentry><b>PNG</b></stentry>
+                    <stentry>Скриншоты, схемы с текстом</stentry>
+                </strow>
+                <strow>
+                    <stentry><b>JPEG</b></stentry>
+                    <stentry>Фотографии, сложные градиенты</stentry>
+                </strow>
+                <strow>
+                    <stentry><b>SVG</b></stentry>
+                    <stentry>Диаграммы, иконки. Лучшее решение для адаптивной верстки</stentry>
+                </strow>
+                <strow>
+                    <stentry><b>GIF</b></stentry>
+                    <stentry>Простые анимации</stentry>
+                </strow>
+            </simpletable>
+            <note type="important">
+                <p>Для векторной графики всегда используйте SVG. Это обеспечивает:</p>
+                <ul>
+                    <li>Четкое отображение на любых разрешениях</li>
+                    <li>Меньший размер файла</li>
+                    <li>Возможность стилизации через CSS</li>
+                </ul>
+            </note>
+        </section>
+        <section>
+            <title>Доступность изображений</title>
+            <p>Правила для соответствия WCAG 2.1:</p>
+            <ol>
+                <li><b>Альтернативный текст (@alt):</b>
+                <ul>
+                    <li>Описание функциональных изображений (кнопки, иконки)</li>
+                    <li>Краткое описание информативных изображений</li>
+                    <li>Пустое значение для декоративных элементов: <codeph>alt=""</codeph></li>
+                </ul>
+                </li>
+                <li><b>Сложные изображения:</b> 
+                    <p>Для диаграмм и графиков используйте комбинацию:</p>
+                    <codeblock outputclass="language-xml">&lt;fig&gt;
+                        &lt;image href="chart.png" alt="График роста продаж"/&gt;
+                        &lt;desc&gt;Подробное текстовое описание данных графика...&lt;/desc&gt;
+                        &lt;/fig&gt;</codeblock>
+                </li>
+                <li><b>Контрастность:</b> Минимальное соотношение 4.5:1 для текста в изображениях</li>
+            </ol>
+        </section>
+        <section id="image_fig">
+            <title>Использование с &lt;fig&gt;</title>
+            <p>Основное назначение элемента<b>&lt;fig&gt;</b> - контейнер для изображений и других медиаобъектов.</p>
+            <p>Элемент <b>&lt;fig&gt;</b> позволяет добавлять к изображениям:</p>
+            <ul>
+                <li>Подписи (<b>&lt;title&gt;</b>)</li>
+                <li>Подробные описания (<b>&lt;desc&gt;</b>)</li>
+                <li>Нумерацию (автоматическую при публикации)</li>
+            </ul>
+            
+            <p>Пример:</p>
+            <codeblock outputclass="language-xml">&lt;fig id="fig_login_sequence"&gt;
+                &lt;title&gt;Пример оформления через fig&lt;/title&gt;
+                &lt;image href="login_flow.png" alt="Эмблема DITA"/&gt;
+                &lt;desc&gt;Рисунок 5. Эмблема приложения DITA&lt;/desc&gt;
+                &lt;/fig&gt;</codeblock>
+            
+            <p>Результат при публикации:</p>
+            <fig>
+                <title>Пример оформления через fig</title>
+                <image href="images/fig_example.jpg" scalefit="yes" width="400" alt="Эмблема DITA"/>
+                <p>Рисунок 5. Эмблема приложения DITA</p>
+            </fig>
+        </section>
+        <section id="image_best_practices">
+            <title>Лучшие практики</title>
+            <ol>
+                <li><b>Оптимизация размеров:</b>
+                    <ul>
+                        <li>Максимальная ширина: 1200px для PDF, 800px для веба</li>
+                        <li>Разрешение: 150 DPI для печати, 72 DPI для экранов</li>
+                    </ul>
+                </li>
+                <li><b>Организация файлов:</b>
+                    <ul>
+                        <li>Папка <filepath>/images</filepath> в корне проекта</li>
+                        <li>Подпапки по типам: <filepath>/screenshots</filepath>, <filepath>/diagrams</filepath></li>
+                    </ul>
+                </li>
+                <li><b>Именование:</b>
+                    <ul>
+                        <li>Латиница, нижний регистр</li>
+                        <li>Осмысленные имена: <filepath>user-profile-edit.png</filepath></li>
+                    </ul>
+                </li>
+                <li><b>Контроль версий:</b> Хранить изображения в репозитории вместе с DITA-файлами</li>
+            </ol>
+        </section>
+            
+            <example>
+                <title>Плохая vs хорошая практика</title>
+                <codeblock outputclass="language-xml">&lt;!-- Плохо: --&gt;
+                    &lt;image href="img123.jpg" alt="image"/&gt;
+                    
+                    &lt;!-- Хорошо: --&gt;
+                    &lt;fig&gt;
+                    &lt;title&gt;Настройка профиля&lt;/title&gt;
+                    &lt;image href="profile/settings-screen.png" 
+                    alt="Экран настроек профиля"
+                    width="800"
+                    scalefit="yes"/&gt;
+                    &lt;desc&gt;Раздел управления персональными данными пользователя&lt;/desc&gt;
+                    &lt;/fig&gt;</codeblock>
+            </example>
+        
+    </conbody>
+</concept>

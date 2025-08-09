@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE strings [
+  <!ENTITY % string-vars SYSTEM "string-vars.dtd">
+  %string-vars;
+]>
+<strings>
+    <!-- Основные замены -->
+    <string id="Tip" outputclass="tip">Совет</string>
+    
+    <!-- Альтернативный вариант -->
+    <string id="tip" outputclass="tip">Совет</string>
+    
+    <!-- Резервный вариант для Oxygen -->
+    <string id="note.tip.title">Совет</string>
+</strings>

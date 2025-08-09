@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="best-practices">
+    <title>Рекомендации по работе с DITA</title>
+    <shortdesc>Рекомендации по созданию, структурированию и поддержке качественного контента в DITA для эффективной работы и переиспользования материалов.</shortdesc>
+    <conbody>
+        <section>
+            <title>Структурирование контента</title>
+            <ul>
+                <li>Делите материал на небольшие тематические блоки (topic-based authoring);</li>
+                <li>Используйте правильный тип топика:<b>concept</b> для теории, <b>task</b> для инструкций, <b>reference</b> для справочной информации; </li>
+                <li>Выносите повторяющийся контент в отдельные топики или переиспользуйте фрагменты (</li>
+            </ul>
+            
+        </section>
+        <section>
+            <title>Использование карт (maps)</title>
+            <ul>
+                <li>Организуйте публикацию через карты (&lt;.ditamap&gt; или &lt;.bookmap&gt;);</li>
+                <li>Группируйте темы по логике использования, а не по формату хранения файлов;</li>
+                <li>Разделяйте большие карты на несколько модульных карт и связывайте их через &lt;topicref format="ditamap"&gt;.</li>
+            </ul>
+       </section>
+        
+        <section>
+            <title>Единообразие и стандарты</title>
+            <ul>
+                <li>Используйте единый стиль написания и терминологию.</li>
+                <li>Следуйте корпоративным стандартам или гайдлайнам по DITA.</li>
+                <li>Соблюдайте стандарты именования файлов и ID элементов.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <title>Метаданные и условия публикации</title>
+            <ul>
+                <li>Применяйте атрибуты для фильтрации контента (&lt;audience&gt;, &lt;product&gt;, &lt;platform&gt;).</li>
+                <li>Используйте ключи (&lt;keys&gt;) для централизованного управления ссылками и терминами.</li>
+                <li>Документируйте используемые условия в проекте.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <title>Проверка и поддержка</title>
+            <ul>
+                <li>Проверяйте валидность XML и соответствие DTD/Schema.</li>
+                <li>Используйте встроенные средства проверки ссылок в Oxygen.</li>
+                <li>Регулярно обновляйте и актуализируйте карты и темы.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <title>Пример эффективного переиспользования</title>
+            <codeblock>
+                &lt;topicref href="install_windows.dita" audience="windows"/&gt;
+                &lt;topicref href="install_linux.dita" audience="linux"/&gt;
+            </codeblock>
+            <p>В зависимости от настроек публикации, читатель увидит только релевантный контент.</p>
+        </section> 
+    </conbody>
+</concept>

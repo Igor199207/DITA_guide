@@ -1,0 +1,49 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2025"><meta name="copyright" content="(C) Copyright 2025"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="concept"><meta name="description" content="Описание структуры <topic&gt;"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="structure_topic_concept"><title>Базовая стурктура &lt;topic&gt;</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="structure_topic_concept"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Базовая стурктура &lt;topic&gt;</h1>
+    
+    <div class="body conbody"><p class="shortdesc">Описание структуры &lt;topic&gt;</p>
+        <p class="p">Базовая структура любого &lt;topic&gt; состоит из следующих компонентов</p>
+        <pre class="pre codeblock"><code>
+            &lt;topic id="unique_id"&gt;
+                &lt;title&gt;Заголовок&lt;/title&gt;
+                &lt;shortdesc&gt;Краткое описание (аннотация).&lt;/shortdesc&gt;gt;
+                &lt;prolog&gt;...&lt;/prolog&gt; 
+                &lt;body&gt;
+                    
+                    &lt;/body&gt;
+                &lt;/topic&gt;
+        </code></pre>
+        <p class="p">Разберем подробнее элементы структуры:</p>
+        <table class="simpletable"><colgroup><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"></colgroup><thead><tr class="sthead">
+                <th class="stentry" scope="col" id="structure_topic_concept__stentry__1">Элемент</th>
+                <th class="stentry" scope="col" id="structure_topic_concept__stentry__2">Описание</th>
+                <th class="stentry" scope="col" id="structure_topic_concept__stentry__3">Пример использования</th>
+            </tr></thead><tbody><tr class="strow">
+                <td class="stentry" headers="structure_topic_concept__stentry__1"><code class="ph codeph">&lt;title&gt;</code></td>
+                <td class="stentry" headers="structure_topic_concept__stentry__2">Заголовок топика или раздела.</td>
+                <td class="stentry" headers="structure_topic_concept__stentry__3"><code class="ph codeph">&lt;title&gt;Как использовать DITA&lt;/title&gt;</code></td>
+            </tr><tr class="strow">
+                <td class="stentry" headers="structure_topic_concept__stentry__1"><code class="ph codeph">&lt;shortdesc&gt;</code></td>
+                <td class="stentry" headers="structure_topic_concept__stentry__2">Краткое описание содержания топика.</td>
+                <td class="stentry" headers="structure_topic_concept__stentry__3"><code class="ph codeph">&lt;shortdesc&gt;Краткое введение в тему.&lt;/shortdesc&gt;</code></td>
+            </tr><tr class="strow">
+                <td class="stentry" headers="structure_topic_concept__stentry__1"><code class="ph codeph">&lt;body&gt;</code></td>
+                <td class="stentry" headers="structure_topic_concept__stentry__2">Основная часть топика (для concept и task).</td>
+                <td class="stentry" headers="structure_topic_concept__stentry__3"><code class="ph codeph">&lt;body&gt;...&lt;/body&gt;</code></td>
+            </tr><tr class="strow">
+                <td class="stentry" headers="structure_topic_concept__stentry__1"><code class="ph codeph">&lt;prolog&gt;</code></td>
+                <td class="stentry" headers="structure_topic_concept__stentry__2">Метаданные (автор, ревизия, ключевые слова и т.д.), часто заполняется автоматически.</td>
+                <td class="stentry" headers="structure_topic_concept__stentry__3"><code class="ph codeph">&lt;prolog&gt;...&lt;/prolog&gt;</code></td>
+            </tr></tbody></table>
+        <p class="p">Дополнительно можно добавить любые дополнительные секции внутри тела документа &lt;body&gt;, такие как:</p>
+        <ul class="ul">
+            <li class="li">Параграфы &lt;p&gt; — Основной элемент для обычного текста.</li>
+            <li class="li">Списки &lt;ol&gt;, &lt;ul&gt;, &lt;sl&gt; — Упорядоченные, нумерованные и нестандартные списки соответственно.</li>
+            <li class="li">Таблицы &lt;table&gt;, &lt;simpletable&gt; — Для представления табличных данных.</li>
+            <li class="li">Иллюстрации &lt;image&gt; — Графики, диаграммы и фотографии.</li>
+            <li class="li">Ссылки &lt;xref&gt; — Перекрестные ссылки между различными файлами или секциями.</li>
+        </ul>
+    </div>
+</article></main></body></html>

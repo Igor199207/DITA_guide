@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="dita_guide">
+    <booktitle>
+        <booklibrary>Официальное издание</booklibrary> <!-- 1. booklibrary (опционально, но если есть — первым) -->
+        <mainbooktitle>Практическое руководство по DITA</mainbooktitle> <!-- 2. mainbooktitle (обязательно) -->
+        <booktitlealt>От основ до продвинутых техник для техничесих писателей</booktitlealt> <!-- 3. booktitlealt (опционально, после mainbooktitle) -->
+    </booktitle>
+    
+    <frontmatter>
+        <booklists>
+            <toc/>
+        </booklists>
+        <bookabstract/>
+            <topicref href="introduction.dita">
+                <topicref href="greeting.dita" navtitle="Приветствие и цель гайда" />
+                <topicref href="history-DITA.dita" navtitle="История возникновения DITA" />
+                <topicref href="advantages-of-using-DITA.dita" navtitle="Преимущества использования DITA" />
+            </topicref>
+     </frontmatter>
+    
+    <chapter href="what-is-dita.dita" navtitle="Что такое DITA?"/>
+    <chapter href="dita-structure.dita" navtitle="Структура DITA" />
+    <chapter href="dita-elements.dita" navtitle="Основные элементы DITA" >
+        <topicref href="element-note.dita" navtitle="Элемент Note"/>
+        <topicref href="element-image.dita" navtitle="Элемент Image"/>
+    </chapter>
+    <chapter href="topic-concept.dita" navtitle="Описание топика Concept" />
+    <chapter href="topic-reference.dita" navtitle="Описание топика Reference" />
+    <chapter href="maps.dita" navtitle="Карты и структура">
+        <topicref href="create_map_in_oxygen.dita" navtitle="Создание карты в Oxygen Editor"></topicref>
+    </chapter>
+    <chapter href="authoring-in-oxygen.dita" navtitle="Использование Oxygen Editor" />
+    <chapter href="best-practices.dita" navtitle="Лучшие практики DITA" />
+    
+    <appendices>
+        <appendix href="resources.dita" navtitle="Полезные ресурсы" />
+        <appendix href="glossary.dita" navtitle="Справочник терминов" />
+        
+    </appendices>
+    
+</bookmap>

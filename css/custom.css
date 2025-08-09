@@ -1,0 +1,105 @@
+.note {
+  border-left: 4px solid #2196F3;
+  background: #f5f7fa;
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 4px;
+  position: relative;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  -ah-break-inside: avoid;
+}
+.note__title {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Tip */
+.note.tip, .note_tip {
+  border-left-color: #4CAF50;
+  background: #E8F5E9;
+}
+.note.tip .note__title,
+.note_tip .note__title {
+  display: none;
+}
+.note.tip::before,
+.note_tip::before {
+  content: "💡 Совет:";
+  font-weight: bold;
+  color: #388E3C;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Important */
+.note.important, .note_important {
+  border-left-color: #FF9800;
+  background: #FFF3E0;
+}
+.note.important .note__title,
+.note_important .note__title {
+  display: none;
+}
+.note.important::before,
+.note_important::before {
+  content: "❗ Важно:";
+  font-weight: bold;
+  color: #E65100;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Remember */
+.note.remember, .note_remember {
+  border-left-color: #1976D2;
+  background: #E3F2FD;
+}
+.note.remember .note__title,
+.note_remember .note__title {
+  display: none;
+}
+.note.remember::before,
+.note_remember::before {
+  content: "🔔 Напоминание:";
+  font-weight: bold;
+  color: #1976D2;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Attention */
+.note.attention, .note_attention {
+  border-left-color: #F44336;
+  background: #FFEBEE;
+}
+.note.attention .note__title,
+.note_attention .note__title {
+  display: none;
+}
+.note.attention::before,
+.note_attention::before {
+  content: "⚠️ Внимание:";
+  font-weight: bold;
+  color: #B71C1C;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Обычная note */
+.note:not(.tip):not(.important):not(.remember):not(.attention) {
+  border-left-color: #2196F3;
+  background: #f5f7fa;
+}
+.note:not(.tip):not(.important):not(.remember):not(.attention) .note__title {
+  display: none;
+}
+.note:not(.tip):not(.important):not(.remember):not(.attention)::before {
+  content: "ℹ️ Примечание:";
+  font-weight: bold;
+  color: #1565C0;
+  display: block;
+  margin-bottom: 6px;
+}

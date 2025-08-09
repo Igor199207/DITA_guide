@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\DITA_guide\temp\pdf?><?workdir-uri file:/D:/DITA_guide/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="greeting" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="concept:1;3:24" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="title:1;4:12">Приветствие и цель учебного пособия</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="shortdesc:1;5:16">Почему было написано это пособие и кому оно адресовано.</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="conbody:1;6:14">
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="p:1;7:12"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="b:1;7:15">Раздел I. Приветствие и цель учебного пособия</b></p>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="p:2;8:12">Добро пожаловать в практическое руководство по DITA!
+        Этот ресурс предназначен для всех специалистов, занимающихся созданием и управлением технической документацией, стремящихся повысить эффективность своей работы и обеспечить высокое качество материалов.</p>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="p:3;10:12"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="b:2;10:15">Цель руководства</b></p>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="p:4;11:12">Руководство создано для тех, кто хочет освоить стандарты DITA и научиться эффективно создавать техническую документацию.Оно предназначено для широкого круга специалистов:
+        <ul class="- topic/ul " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="ul:1;12:13">
+            <li class="- topic/li " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="li:1;13:17">технических писателей;</li>
+            <li class="- topic/li " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="li:2;14:17">разработчиков программного обеспечения;</li>
+            <li class="- topic/li " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="li:3;15:17">инженеров и менеджеров проектов.</li>
+        </ul></p>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="p:5;17:12"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="b:3;17:15">Адресаты</b></p>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="p:6;18:12">Это пособие будет полезно специалистам различных уровней квалификации:
+        <ul class="- topic/ul " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="ul:2;19:13">
+            <li class="- topic/li " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="li:4;20:17">начинающим техническим писателям, осваивающим основы организации и структурирования технической документации;</li>
+            <li class="- topic/li " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="li:5;21:17">опытным авторам, ищущим новые инструменты повышения эффективности своего труда;</li>
+            <li class="- topic/li " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="li:6;22:17">руководителям отделов, заинтересованным в оптимизации процесса производства документации.</li>
+        </ul></p>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="p:7;24:12"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="b:4;24:15">Компании и организации, использующие DITA</b></p>
+        <p class="- topic/p " xtrf="file:/D:/DITA_guide/greeting.dita" xtrc="p:8;25:12">Многие крупные международные корпорации применяют DITA для улучшения качества своей документации. 
+           Среди них такие известные бренды, как Intel, Cisco Systems, Adobe Systems, SAP AG, Microsoft Corporation и Boeing Company. 
+           Эти компании выбирают DITA благодаря возможности многократно использовать один и тот же контент, снижая затраты на создание новых версий продуктов и поддерживая высокий уровень согласованности и точности документации.</p>
+    </conbody>
+</concept>

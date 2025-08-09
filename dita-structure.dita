@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="structure_topic_concept">
+    <title>Базовая стурктура &lt;topic&gt;</title>
+    <shortdesc>Описание структуры &lt;topic&gt;</shortdesc>
+    <conbody>
+        <p>Базовая структура любого &lt;topic&gt; состоит из следующих компонентов</p>
+        <codeblock>
+            &lt;topic id="unique_id"&gt;
+                &lt;title&gt;Заголовок&lt;/title&gt;
+                &lt;shortdesc&gt;Краткое описание (аннотация).&lt;/shortdesc>gt;
+                &lt;prolog&gt;...&lt;/prolog&gt; <!-- (необязательно) -->
+                &lt;body&gt;
+                    <!-- Основное содержимое -->
+                    &lt;/body&gt;
+                &lt;/topic&gt;
+        </codeblock>
+        <p>Разберем подробнее элементы структуры:</p>
+        <simpletable>
+            <sthead>
+                <stentry>Элемент</stentry>
+                <stentry>Описание</stentry>
+                <stentry>Пример использования</stentry>
+            </sthead>
+            <strow>
+                <stentry><codeph>&lt;title&gt;</codeph></stentry>
+                <stentry>Заголовок топика или раздела.</stentry>
+                <stentry><codeph>&lt;title&gt;Как использовать DITA&lt;/title&gt;</codeph></stentry>
+            </strow>
+            <strow>
+                <stentry><codeph>&lt;shortdesc&gt;</codeph></stentry>
+                <stentry>Краткое описание содержания топика.</stentry>
+                <stentry><codeph>&lt;shortdesc&gt;Краткое введение в тему.&lt;/shortdesc&gt;</codeph></stentry>
+            </strow>
+            <strow>
+                <stentry><codeph>&lt;body&gt;</codeph></stentry>
+                <stentry>Основная часть топика (для concept и task).</stentry>
+                <stentry><codeph>&lt;body&gt;...&lt;/body&gt;</codeph></stentry>
+            </strow>
+            <strow>
+                <stentry><codeph>&lt;prolog&gt;</codeph></stentry>
+                <stentry>Метаданные (автор, ревизия, ключевые слова и т.д.), часто заполняется автоматически.</stentry>
+                <stentry><codeph>&lt;prolog&gt;...&lt;/prolog&gt;</codeph></stentry>
+            </strow>
+        </simpletable>
+        <p>Дополнительно можно добавить любые дополнительные секции внутри тела документа &lt;body&gt;, такие как:</p>
+        <ul>
+            <li>Параграфы &lt;p&gt; — Основной элемент для обычного текста.</li>
+            <li>Списки &lt;ol&gt;, &lt;ul&gt;, &lt;sl&gt; — Упорядоченные, нумерованные и нестандартные списки соответственно.</li>
+            <li>Таблицы &lt;table&gt;, &lt;simpletable&gt; — Для представления табличных данных.</li>
+            <li>Иллюстрации &lt;image&gt; — Графики, диаграммы и фотографии.</li>
+            <li>Ссылки &lt;xref&gt; — Перекрестные ссылки между различными файлами или секциями.</li>
+        </ul>
+    </conbody>
+</concept>

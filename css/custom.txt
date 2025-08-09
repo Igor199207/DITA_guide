@@ -1,0 +1,23 @@
+/* Скрыть заголовок у note с type="tip" */
+.note.tip .note__title {
+  display: none !important;
+}
+
+/* Для Oxygen 27+ (новые классы) */
+.note[type="tip"] > .title {
+  display: none !important;
+}
+.note[type="tip"] > .title {
+  visibility: hidden;
+  position: relative;
+}
+
+.note[type="tip"] > .title::after {
+  content: "Совет" !important;  /* Нужный текст */
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font-weight: bold;
+  color: inherit;

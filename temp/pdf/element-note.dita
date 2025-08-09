@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\DITA_guide\temp\pdf?><?workdir-uri file:/D:/DITA_guide/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="element-note" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="concept:1;3:28" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="title:1;4:12">Элемент Note</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="shortdesc:1;5:16">Использование элемента &lt;note&gt;</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="conbody:1;6:14">
+        <section class="- topic/section " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="section:1;7:18">
+            <title class="- topic/title " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="title:2;8:20">Для чего используют&lt;note&gt;</title>
+            <p class="- topic/p " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="p:1;9:16">&lt;note&gt; - семантический элемент DITA для выделения дополнительной информации,
+                которая: <ul class="- topic/ul " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="ul:1;10:30">
+                    <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:1;11:25">Не является критичной для выполнения задачи;</li>
+                    <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:2;12:25">Поясняет контекст или нюансы;</li>
+                    <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:3;13:25">Содержит советы или предостережения;</li>
+                    <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:4;14:25">Улучшает понимание без нарушения основного потока.</li>
+                </ul></p>
+            <p class="- topic/p " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="p:2;16:16">Пример визуализации при публикации:</p>
+            <fig class="- topic/fig " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="fig:1;17:18">
+                <image href="images/note_example.jpg" scalefit="yes" width="400" placement="inline" class="- topic/image " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="image:1;18:83"/>
+                <p class="- topic/p " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="p:3;19:20">Типичное отображение note в PDF-документе</p>
+            </fig>
+        </section>
+        <section class="- topic/section " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="section:2;22:18">
+            <title class="- topic/title " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="title:3;23:20">Синтаксис и атрибуты</title>
+            <p class="- topic/p " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="p:4;24:16">Базовый синтаксис:</p>
+            <codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="codeblock:1;25:51">&lt;note&gt;&lt;p&gt;Текст примечания&lt;/p&gt;&lt;/note&gt;</codeblock>
+            <p class="- topic/p " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="p:5;26:16">Ключевые атрибуты:</p>
+            <simpletable relcolwidth="1* 3*" class="- topic/simpletable " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="simpletable:1;27:46">
+                <sthead class="- topic/sthead " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="sthead:1;28:25">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:1;29:30" dita-ot:x="1" dita-ot:y="1">Атрибут</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:2;30:30" dita-ot:x="2" dita-ot:y="1">Значение</stentry>
+                </sthead>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="strow:1;32:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:3;33:30" dita-ot:x="1" dita-ot:y="2"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="codeph:1;33:38">type</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:4;34:30" dita-ot:x="2" dita-ot:y="2">Определяет тип: <ul class="- topic/ul " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="ul:2;34:50">
+                            <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:5;35:33"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:1;35:36">note</b>(по умолчанию) - нейтральное примечание</li>
+                            <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:6;36:33"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:2;36:36">tip</b> - полезный совет</li>
+                            <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:7;37:33"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:3;37:36">important</b> - ключевая информация</li>
+                            <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:8;38:33"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:4;38:36">remember</b> - напоминание</li>
+                            <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:9;39:33"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:5;39:36">attention</b> - предостережение</li>
+                        </ul>
+                    </stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="strow:2;43:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:5;44:30" dita-ot:x="1" dita-ot:y="3"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="codeph:2;44:38">othertype</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:6;45:30" dita-ot:x="2" dita-ot:y="3">Кастомный тип, если стандартные не подходят</stentry>
+                </strow>
+            </simpletable>
+            <p class="- topic/p " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="p:6;48:16">
+                <b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:6;49:20">Пример с атрибутом type</b>
+                <codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="codeblock:2;50:55">&lt;note type="tip"&gt;&lt;p&gt;Используйте Oxygen Author mode для визуального контроля note&lt;/p&gt;&lt;/note&gt;</codeblock>
+            </p>
+        </section>
+        <section id="when_use_note" class="- topic/section " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="section:3;53:37">
+            <title class="- topic/title " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="title:4;54:20">Когда использовать &lt;note&gt;</title>
+            <p class="- topic/p " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="p:7;55:16"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:7;55:19">Используйте:</b>
+                <ul class="- topic/ul " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="ul:3;56:21">
+                    <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:10;57:25">Для пояснений, не влияющих на выполнение задачи</li>
+                    <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:11;58:25">Дополнительных технических деталей</li>
+                    <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:12;59:25">Альтернативных методов решения</li>
+                    <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:13;60:25">Исторических справок или ссылок на стандарты</li>
+                </ul>
+            </p>
+            <p class="- topic/p " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="p:8;63:16"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:8;63:19">Избегайте:</b>
+                <ul class="- topic/ul " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="ul:4;64:21">
+                    <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:14;65:25">Критически важных шагов (это должно быть в основном тексте)</li>
+                    <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:15;66:25">Больших блоков текста (более 3 абзацев)</li>
+                    <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:16;67:25">Частого использования (не более 2-3 notes на страницу)</li>
+                </ul>
+            </p>
+            <note type="tip" class="- topic/note " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="note:1;70:30">
+                <p class="- topic/p " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="p:9;71:20">Note не заменяет элементы &lt;warning&gt; или &lt;danger&gt; для критических
+                    предупреждений!</p>
+            </note>
+        </section>
+        <section id="note_styling" class="- topic/section " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="section:4;75:36">
+            <title class="- topic/title " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="title:5;76:20">Особенности стилизации</title>
+            <p class="- topic/p " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="p:10;77:16">При публикации тип note влияет на отображение:</p>
+            <ul class="- topic/ul " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="ul:5;78:17">
+                <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:17;79:21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:9;79:24">PDF:</b>Иконки + цветная рамка <fig class="- topic/fig " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="fig:2;79:60">
+                        <image href="images/note_example.jpg" scalefit="yes" width="450" placement="inline" class="- topic/image " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="image:2;80:91"/>
+                    </fig>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:18;83:21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:10;83:24">HTML:</b>CSS-классы (dita-note, note-tip, note-important)</li>
+            </ul>
+            <p class="- topic/p " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="p:11;85:16">Пример кастомизации в CSS:</p>
+            <codeblock outputclass="language-css" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="codeblock:3;86:51">.note-tip {
+            border-left: 4px solid #4CAF50;
+            background-color: #E8F5E9;
+            padding: 12px;
+            }
+            .note-tip::before {
+            content:"💡 Совет: "
+            font-weight: bold;
+            }
+            </codeblock>
+        </section>
+        <section id="note_best_practices" class="- topic/section " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="section:5;97:43">
+            <title class="- topic/title " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="title:6;98:20">Рекомендации по использованию</title>
+            <ol class="- topic/ol " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="ol:1;99:17">
+                <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:19;100:21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:11;100:24">Краткость:</b> ограничьте 1-2 предложениями.</li>
+                <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:20;101:21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:12;101:24">Типизация:</b> всегда указывайте type</li>
+                <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:21;102:21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:13;102:24">Локализация:</b> Для переводов используйте neutral-формулировки</li>
+                <li class="- topic/li " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="li:22;103:21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:14;103:24">Доступность:</b> Добавляйте текстовые альтернативы иконкам через CSS</li>
+            </ol>
+        </section>
+        <example class="- topic/example " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="example:1;106:18">
+            <b class="+ topic/ph hi-d/b " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="b:15;107:16">Примеры</b>
+            <codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="codeblock:4;108:51">
+              &lt;!-- Плохо: слишком длинный и без типа --&gt;
+              &lt;note&gt;&lt;p&gt;На этом этапе важно проверить...(3 абзаца текста)&lt;/p&gt;&lt;/note&gt;
+              &lt;!-- Хорошо: Кратко и с типом --&gt;
+              &lt;note type="important"&gt;&lt;p&gt;Перед использоваием убедитесь в наличии подключения к сети&lt;/p&gt;&lt;/note&gt;</codeblock>
+        </example>
+        <section id="note_vs_others" class="- topic/section " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="section:6;114:38">
+            <title class="- topic/title " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="title:7;115:20">Сравнение с похожими элементами</title>
+            <simpletable relcolwidth="1* 2* 2*" class="- topic/simpletable " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="simpletable:2;116:49">
+                <sthead class="- topic/sthead " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="sthead:2;117:25">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:7;118:30" dita-ot:x="1" dita-ot:y="1">Элемент</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:8;119:30" dita-ot:x="2" dita-ot:y="1">Когда использовать</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:9;120:30" dita-ot:x="3" dita-ot:y="1">Визуальное отличие</stentry>
+                </sthead>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="strow:3;122:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:10;123:30" dita-ot:x="1" dita-ot:y="2"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="codeph:3;123:38">&lt;note&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:11;124:30" dita-ot:x="2" dita-ot:y="2">Дополнительная не критичная информация</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:12;125:30" dita-ot:x="3" dita-ot:y="2">Нейтральная иконка(ℹ)</stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="strow:4;127:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:13;128:30" dita-ot:x="1" dita-ot:y="3"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="codeph:4;128:38">&lt;tip&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:14;129:30" dita-ot:x="2" dita-ot:y="3">Полезные лайфхаки для экспертов</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:15;130:30" dita-ot:x="3" dita-ot:y="3">Зеленая иконка (💡)</stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="strow:5;132:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:16;133:30" dita-ot:x="1" dita-ot:y="4"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="codeph:5;133:38">&lt;warning&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:17;134:30" dita-ot:x="2" dita-ot:y="4">Риск потери данных</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:18;135:30" dita-ot:x="3" dita-ot:y="4">Желтый треугольник (⚠)</stentry>
+                </strow>
+                <strow class="- topic/strow " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="strow:6;137:24">
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:19;138:30" dita-ot:x="1" dita-ot:y="5"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="codeph:6;138:38">&lt;danger&gt;</codeph></stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:20;139:30" dita-ot:x="2" dita-ot:y="5">Угроза безопасности или оборудованию</stentry>
+                    <stentry class="- topic/stentry " xtrf="file:/D:/DITA_guide/element-note.dita" xtrc="stentry:21;140:30" dita-ot:x="3" dita-ot:y="5">Красный знак остановки (⛔)</stentry>
+                </strow>
+            </simpletable>
+        </section>
+
+    </conbody>
+</concept>
