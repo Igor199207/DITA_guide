@@ -27,7 +27,7 @@
 }
 .note.tip::before,
 .note_tip::before {
-  content: "💡 Совет:";
+  content: "Совет:";
   font-weight: bold;
   color: #388E3C;
   display: block;
@@ -45,7 +45,7 @@
 }
 .note.important::before,
 .note_important::before {
-  content: "❗ Важно:";
+  content: "Важно:";
   font-weight: bold;
   color: #E65100;
   display: block;
@@ -63,7 +63,7 @@
 }
 .note.remember::before,
 .note_remember::before {
-  content: "🔔 Напоминание:";
+  content: "Напоминание:";
   font-weight: bold;
   color: #1976D2;
   display: block;
@@ -81,7 +81,7 @@
 }
 .note.attention::before,
 .note_attention::before {
-  content: "⚠️ Внимание:";
+  content: "Внимание:";
   font-weight: bold;
   color: #B71C1C;
   display: block;
@@ -97,7 +97,7 @@
   display: none;
 }
 .note:not(.tip):not(.important):not(.remember):not(.attention)::before {
-  content: "ℹ️ Примечание:";
+  content: "Примечание:";
   font-weight: bold;
   color: #1565C0;
   display: block;

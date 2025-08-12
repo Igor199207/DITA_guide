@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
-<bookmap id="dita_guide">
+<bookmap id="dita_guide" xml:lang="ru">
     <booktitle>
-        <booklibrary>Официальное издание</booklibrary> <!-- 1. booklibrary (опционально, но если есть — первым) -->
-        <mainbooktitle>Практическое руководство по DITA</mainbooktitle> <!-- 2. mainbooktitle (обязательно) -->
-        <booktitlealt>От основ до продвинутых техник для техничесих писателей</booktitlealt> <!-- 3. booktitlealt (опционально, после mainbooktitle) -->
+        <booklibrary>Darwin Information Typing Architecture (DITA)</booklibrary> <!-- 1. booklibrary (опционально, но если есть — первым) -->
+        <mainbooktitle>Рассмотрение основных вопросов работы с DITA</mainbooktitle> <!-- 2. mainbooktitle (обязательно) -->
+        <booktitlealt>Версия 0.1.</booktitlealt> <!-- 3. booktitlealt (опционально, после mainbooktitle) -->
     </booktitle>
     
     <frontmatter>
@@ -12,13 +12,11 @@
             <toc/>
         </booklists>
         <bookabstract/>
-            <topicref href="introduction.dita">
-                <topicref href="greeting.dita" navtitle="Приветствие и цель гайда" />
-                <topicref href="history-DITA.dita" navtitle="История возникновения DITA" />
-                <topicref href="advantages-of-using-DITA.dita" navtitle="Преимущества использования DITA" />
-            </topicref>
      </frontmatter>
     
+    <chapter href="greeting.dita" navtitle="Приветствие и цель гайда" />
+    <chapter href="history-DITA.dita" navtitle="История возникновения DITA" />
+    <chapter href="advantages-of-using-DITA.dita" navtitle="Преимущества использования DITA" />
     <chapter href="what-is-dita.dita" navtitle="Что такое DITA?"/>
     <chapter href="dita-structure.dita" navtitle="Структура DITA" />
     <chapter href="dita-elements.dita" navtitle="Основные элементы DITA" >
@@ -30,6 +28,7 @@
     <chapter href="maps.dita" navtitle="Карты и структура">
         <topicref href="create_map_in_oxygen.dita" navtitle="Создание карты в Oxygen Editor"></topicref>
     </chapter>
+    <chapter href="dita-markdown-asciidoc-comparison.dita" navtitle="Сравнение DITA, Markdown и Asciidoc"></chapter>
     <chapter href="authoring-in-oxygen.dita" navtitle="Использование Oxygen Editor" />
     <chapter href="best-practices.dita" navtitle="Лучшие практики DITA" />
     
